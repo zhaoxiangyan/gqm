@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+test/unit/coverage
+test/e2e/reports
+selenium-debug.log
+GQFX 中国官网.psd*
+GQFX 中国官网框架 171128.docx*
+GQM网站首页 v171227(1).docx*
+logo.pdf*
+网站的尾部gqfxcn footer 171129.docx*

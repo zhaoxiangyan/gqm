@@ -1,0 +1,356 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+html {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+html, button, input, textarea, select {
+    color: #464b4a;
+    font: 12px/18px Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.page {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: auto;
+    min-width: 1000px;
+    min-height: 100%;
+    background: #fff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    font-family: Arial,'Microsoft YaHei','黑体','微软雅黑','宋体',sans-serif;
+    position: relative !important;
+    direction: ltr;
+}
+.grid__container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 950px;
+}
+/* 头部 */
+.header {
+    position: relative;
+    background: #384041;
+    color: #d4d9d7;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+.header{
+    background-image:url('../img/header_bg.png');
+}
+.header_nav-opacity {
+    position: relative;
+    background-color: rgba(0,0,0,.1);
+    box-shadow: 0 1px rgba(95,104,104,.12);
+    font-size:12px;
+}
+.header__nav-item {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    padding: 0;
+    vertical-align: top;
+}
+.header__nav-link, .header__nav-text {
+    display: block;
+    color: #d4d9d7;
+    line-height: 36px;
+}
+.header__nav-link:hover {
+    color: #0289cc;
+}
+.header__nav-l {
+    position: relative;
+    z-index: 2;
+    float: left;
+}
+.header__my {
+    padding: 6px 0;
+}
+.header__nav-item:first-child {
+    margin-left: 0;
+}
+.header__my-link {
+    position: relative;
+    display: inline-block;
+    padding: 3px 11px;
+    outline: 0;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(#41494a,#364040);
+    background: linear-gradient(#41494a,#364040);
+    background-color: #364040;
+    color: #a0c437;
+    vertical-align: top;
+    text-shadow: 0 -1px #212828;
+    line-height: 18px;
+}
+.header__my-link::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #2e3737;
+    border-radius: 5px;
+    box-shadow: 0 1px rgba(255,255,255,.05) inset;
+    content: '';
+}
+.header__my-link:focus, .header__my-link:hover {
+    background: -webkit-linear-gradient(#f7a82d,#c36709);
+    background: linear-gradient(#f7a82d,#c36709);
+    background-color: #c36709;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #b05912;
+}
+.header__reg {
+    font-size: 13px;
+}
+.header__nav-item:last-child {
+    margin-right: 0;
+}
+/* 头部右边 */
+.header__nav-r {
+    position: relative;
+    z-index: 2;
+    float: right;
+}
+.header__partnership{
+    background:url('../img/header_partnership_bg.svg') 0 8px no-repeat;
+}
+.header__partnership-link{
+    padding-left: 28px;
+}
+.header__partners{
+    background: url('../img/header_partners_bg.svg') 0 8px no-repeat;
+}
+.header__partners-link{
+    padding-left: 18px;
+}
+.header__news{
+    background: url('../img/header_news_bg.svg') 0 8px no-repeat;
+}
+.header__news-link{
+    padding-left: 22px;
+}
+.header__langs{
+    background: url('../img/header_langs_bg.svg') 0 8px no-repeat;
+}
+.header__langs-link{
+    padding-left: 23px;
+}
+.header__faq{
+    background: url('../img/header_faq_bg.svg') 0 8px no-repeat;
+}
+.header__faq-link{
+    padding-left: 23px;
+}
+.header__search {
+    padding: 7px 0;
+}
+.header__search-form {
+    position: relative;
+}
+.header__search-input {
+    margin: 0;
+    padding: 2px 20px 2px 10px;
+    width: 100px;
+    height: 22px;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    background: rgba(19,24,24,.45);
+    color: #6b716f;
+    vertical-align: top;
+}
+.header__search-input, .header__search-input[type='search'] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+.header__search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 22px;
+    outline: 0;
+    border: 0;
+    background: transparent no-repeat 2px 4px;
+    text-indent: -999em;
+    cursor: pointer;
+}
+.header__search-button {
+    background-image: url('../img/header_search_bg.svg');
+}
+.header__search-button:hover {
+    background-image: url('../img/header_searchhover_bg.svg');
+}
+/* 头部内容块 */
+.header_content {
+    position: relative;
+    margin: 0 auto;
+    width: 950px;
+    height: 90px;
+    text-align: justify;
+    text-justify: distribute;
+}
+.header_content::after {
+    display: inline-block;
+    width: 100%;
+    content: '';
+}
+.header__logo-ball {
+    width: 154px;
+    height: auto;
+    top: -34px;
+    position: absolute;
+    left: -41px;
+}
+.header__logo-mini {
+    position: relative;
+    display: inline-block;
+    top: 23px;
+    left: 17px;
+    margin-right: 25px;
+}
+.header__birthday {
+    position: relative;
+    top: 23px;
+    display: inline-block;
+    overflow: hidden;
+    width: 178px;
+    height: 47px;
+    background: no-repeat;
+    vertical-align: top;
+    text-align: left;
+    text-indent: -999em;
+}
+.header__birthday {
+    top: 33px;
+    width: 188px;
+    height: 25px;
+}
+.header__birthday {
+    background-image: url('../img/header_content_img.png');
+}
+/* 开始交易 投资 存入资金 */
+.header__action-list {
+    position: relative;
+    top: 26px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.header__action-item {
+    display: inline-block;
+    margin: 0 0 0 18px;
+    vertical-align: top;
+}
+.header__action-item:first-child {
+    margin-left: 0;
+}
+.header__action {
+    position: relative;
+    display: inline-block;
+    padding: 10px 21px;
+    outline: 0;
+    border-radius: 9px;
+    background: -webkit-linear-gradient(#444c4d,#394343);
+    background: linear-gradient(#444c4d,#394343);
+    background-color: #394343;
+    color: #a6cc38;
+    vertical-align: top;
+    text-shadow: 0 -1px #212828;
+}
+.header__action_type_primary {
+    background: -webkit-linear-gradient(#ed7330 1px,#d25407);
+    background: linear-gradient(#ed7330 1px,#d25407);
+    background-color: #d25407;
+    color: #fff;
+    text-shadow: 0 -1px 0 #bb420b;
+}
+.header__action::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #2e3737;
+    border-radius: 7px;
+    box-shadow: 0 1px rgba(255,255,255,.05) inset;
+    content: '';
+}
+.header__action_type_primary::before {
+    box-shadow: 0 1px rgba(255,255,255,.2) inset;
+}
+.header__action:focus, .header__action:hover {
+    background: -webkit-linear-gradient(#f7a82d 1px,#bd6309);
+    background: linear-gradient(#f7a82d 1px,#bd6309);
+    background-color: #bd6309;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #b05912;
+}
+/* 在线客服 QQ交谈 */
+.header__contact-list {
+    position: relative;
+    top: 9px;
+    display: inline-block;
+    color: #d1d7d5;
+    vertical-align: top;
+    text-align: right;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.header__phone {
+    display: block;
+    margin: 0 0 9px;
+    font-size: 16px;
+}
+.header__contact-list span, .header__contact-list a {
+    color: #d4d9d7;
+}
+.header__chat {
+    display: block;
+    margin: 0 0 9px;
+}
+.qq-chat_type_icon {
+    display: inline-block;
+    height: 22px;
+    width: 92px;
+}
+.qq-chat_type_icon {
+    background-image: url('../img/header_qq.png');
+}

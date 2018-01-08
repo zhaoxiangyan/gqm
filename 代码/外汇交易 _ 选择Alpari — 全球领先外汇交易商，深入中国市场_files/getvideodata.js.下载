@@ -1,0 +1,10 @@
+/*!
+ * JW Player/YouTube ~ Get Video Data ~ version 1.0 ~ November 2017, Copyright (c) James Herrieven ~ https://www.haiku.co.uk
+ * A plugin fix for making JW Player work with YouTube since the removal of the "getVideoData" method
+ * v1.1 ~ Updated to take account of "autostart":true scenario
+ * 		~ Cancels autostart in Chrome as this causes JW player error anyway
+ * 			- Chrome now requires a user gesture to init a media playback, and JW doesn't handle this gracefully...
+ * v1.2 ~ Updated to handle mixed (non-YT) playlists
+ * Licensed under The MIT License.
+ */
+!function(e){e().registerPlugin("getvideodata","6.0",function(i,t,o){function n(e){window.YT&&YT[r]?a(e):l(function(){n(e)},200)}function a(e){var i=YT[r](e+"_youtube");i?i[v]||u(i):l(function(){a(e)},200)}function u(t){var o=!1;if(f<5e3){f++;for(var n in t)t[n][d]&&function(n){o=!0,console.info('Powered By Haiku: "getVideoData" fix applied...'),t[v]=function(){return t[n][d]},w&&!e.utils.isChrome()&&i.play(!0)}(n);o||l(function(){u(t)},200)}else console.info('Powered By Haiku: "getVideoData" fix failed...')}var f=0,l=setTimeout,r="get",s="Video",c="Data",d=s.toLowerCase()+c,v=r+s+c,w=!1;i.onBeforePlay(function(t){var o=i.getPlaylistItem(),n=!0;if(e.utils.isYouTube(o.file))if(window.YT&&YT[r]){var a=YT[r](i.id+"_youtube");(!a||a&&!a[v])&&(n=!1)}else n=!1;n||(i.stop(),w=!0)}),i.onPlaylistItem(function(t){var o=i.getPlaylistItem();e.utils.isYouTube(o.file)&&n(i.id)}),this.about={label:"JW Player/YouTube ~ Get Video Data",version:"v1.2",author:"James Herrieven ~ https://www.haiku.co.uk"}})}(jwplayer);

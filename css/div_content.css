@@ -1,0 +1,286 @@
+.page__main {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+.grid__container:before, .grid__container:after {
+    display: table;
+    content: '';
+}
+h1, .text__h1 {
+    font: normal 24px/36px Georgia,serif;
+}
+h1 {
+    margin-bottom: 9px;
+}
+/* 轮播图 */
+.promoblock {
+    position: relative;
+    margin-bottom: 18px;
+    height: 306px;
+    outline: 0;
+    background: #f2f4f4;
+}
+.promoblock_type_main {
+    margin-bottom: 0;
+    height: 288px;
+    font-size: 15px;
+}
+/* 轮播上一个下一个按钮 */
+.promoblock__arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+    margin: -14px 0 0;
+    padding: 0;
+    width: 20px;
+    height: 28px;
+    outline: 0;
+    border: 0;
+    background: no-repeat;
+    text-indent: -999em;
+}
+.promoblock__arrow_moving_l {
+    left: -25px;
+}
+.promoblock__arrow_moving_r {
+    right: -25px;
+}
+.promoblock__arrow_moving_l {
+    background-image: url('../img/moving_l_bg.png');
+}
+.promoblock__arrow_moving_r {
+    background-image: url('../img/moving_r_bg.png');
+}
+.promoblock_active_yes .promoblock__arrow {
+    display: block;
+}
+/* 轮播图片 */
+.promoblock__items {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+.promoblock_type_main .promoblock__items {
+    overflow: visible;
+}
+.promoblock__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: none;
+}
+.promoblock__item_name_meta-trader-5 {
+    background-color: #000;
+    color: #fff;
+}
+.promoblock__item_active_yes {
+    z-index: 1;
+    display: block;
+    opacity: 1;
+    outline: 0;
+}
+.promoblock__item_name_meta-trader-5 {
+    background-color: #000;
+    color: #fff;
+}
+.promoblock__item_name_world-largeset-trader {
+    background-color: #222527;
+    color: #fefefe;
+    font-size: 12px;
+}
+.promoblock__item_name_bfopay-commission-refund {
+    background-color: #e77d81;
+}
+.promoblock__item_name_global-development {
+    background-color: #faf8ec;
+}
+.promoblock__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    outline: 0;
+    background: rgba(0,0,0,0);
+}
+.promoblock__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.promoblock__item_name_meta-trader-5 .promoblock__content {
+    top: 72px;
+    left: 620px;
+    width: 230px;
+    font-size: 12px;
+}
+.promoblock__item_name_meta-trader-5 .promoblock__title {
+    margin-bottom: 18px;
+    color: #fff;
+    font: 24px/27px Georgia,serif;
+}
+p {
+    margin: 0 0 18px;
+}
+.promoblock_type_main .promoblock__text, .promoblock_type_main .promoblock__more {
+    font-size: 14px;
+}
+.button {
+    position: relative;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: -3px 0;
+    padding: 3px 10px;
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+    background: -webkit-linear-gradient(#a6c54c,#688811);
+    background: linear-gradient(#a6c54c,#688811);
+    background-color: #688811;
+    color: #fff;
+    vertical-align: top;
+    text-align: center;
+    text-shadow: 0 -1px 0 #5b721b;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+.button_size_36 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 16px;
+}
+.promoblock__more, .promoblock__button {
+    position: relative;
+    z-index: 1;
+}
+.promoblock_type_main .promoblock__button {
+    padding-right: 20px;
+    padding-left: 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.37);
+    font-size: 18px;
+    font-family: Georgia,serif;
+}
+.promoblock__item_name_meta-trader-5 .promoblock__button {
+    background: -webkit-linear-gradient(#a3cd2b,#6b8f07);
+    background: linear-gradient(#a3cd2b,#6b8f07);
+}
+.promoblock__item_name_world-largeset-trader .promoblock__content {
+    top: 54px;
+    left: 650px;
+    width: 290px;
+}
+.promoblock__item_name_world-largeset-trader .promoblock__title {
+    font-size: 21px;
+    line-height: 27px;
+}
+.promoblock__item_name_world-largeset-trader .promoblock__text {
+    margin-bottom: 21px;
+}
+.promoblock__item_name_world-largeset-trader .promoblock__button {
+    padding: 0 10px;
+    box-shadow: none;
+    font: normal 15px/36px Helvetica,Arial,sans-serif;
+}
+.promoblock__item_name_bfopay-commission-refund .promoblock__content {
+    top: 45px;
+    right: 100px;
+    left: 600px;
+    color: #565656;
+    font-size: 12px;
+}
+.promoblock__item_name_bfopay-commission-refund .promoblock__title {
+    margin-bottom: 18px;
+    color: #565656;
+    font-size: 24px;
+    line-height: 27px;
+}
+.promoblock__item_name_bfopay-commission-refund .promoblock__more {
+    color: #016aed;
+}
+.promoblock__item_name_global-development .promoblock__content {
+    top: 72px;
+    left: 570px;
+    width: 320px;
+    color: #484745;
+}
+.page_lang_cn .promoblock__item_name_global-development .promoblock__content {
+    width: 350px;
+}
+.promoblock__item_name_global-development .promoblock__title {
+    font: 24px/27px 'Times New Roman',Arial,sans-serif;
+}
+.promoblock__item_name_global-development .promoblock__text {
+    margin-bottom: 27px;
+}
+.promoblock__item_name_global-development .button {
+    padding: 9px 25px;
+}
+.promoblock__item_name_trader-wars .promoblock__content {
+    left: 570px;
+    top: 45px;
+    width: 330px;
+}
+.promoblock__item_name_trader-wars .promoblock__title {
+    color: #fff;
+    font-size: 24px;
+    line-height: 27px;
+}
+.promoblock__item_name_trader-wars .promoblock__text {
+    color: #fff;
+    font-size: 12px;
+}
+.s_mb_9 {
+    margin-bottom: 9px;
+}
+/* 左下角五个按钮 */
+.promoblock__controls {
+    position: absolute;
+    right: 10px;
+    bottom: 9px;
+    z-index: 3;
+    padding: 4px 5px 3px;
+    border-radius: 6px;
+    background: rgba(22,26,17,.6);
+}
+.promoblock__control {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    outline: 0;
+    border: 0;
+    background: 0;
+    text-indent: -999em;
+}
+.promoblock__control:before {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(#8d8d8d,#e8e9e6);
+    background: linear-gradient(#8d8d8d,#e8e9e6);
+    background-color: #e8e9e6;
+    content: '';
+}
+.promoblock__control_state_active:before {
+    background: -webkit-linear-gradient(#f7a82d,#c36709);
+    background: linear-gradient(#f7a82d,#c36709);
+    background-color: #f7a82d;
+}
