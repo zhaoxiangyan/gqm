@@ -53,20 +53,20 @@ html, button, input, textarea, select {
 /* 头部 */
 .header {
     position: relative;
-    background: #384041;
+    /* background: #384041; */
     color: #d4d9d7;
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
 }
-.header{
+/* .header{
     background-image:url('../img/header_bg.png');
-}
+} */
 .header_nav-opacity {
     position: relative;
-    background-color: rgba(0,0,0,.1);
-    box-shadow: 0 1px rgba(95,104,104,.12);
+    /* background-color: rgba(0,0,0,.1); */
+    /* box-shadow: 0 1px rgba(95,104,104,.12); */
     font-size:12px;
 }
 .header__nav-item {
@@ -77,7 +77,7 @@ html, button, input, textarea, select {
 }
 .header__nav-link, .header__nav-text {
     display: block;
-    color: #d4d9d7;
+    color: #000;
     line-height: 36px;
 }
 .header__nav-link:hover {
@@ -138,6 +138,7 @@ html, button, input, textarea, select {
     position: relative;
     z-index: 2;
     float: right;
+    top:22px;
 }
 .header__partnership{
     background:url('../img/header_partnership_bg.svg') 0 8px no-repeat;
@@ -230,19 +231,19 @@ html, button, input, textarea, select {
     content: '';
 }
 .header__logo-ball {
-    width: 154px;
+    width: 123px;
     height: auto;
-    top: -34px;
+    top: -14px;
     position: absolute;
-    left: -41px;
+    left: 0;
 }
-.header__logo-mini {
+/* .header__logo-mini {
     position: relative;
     display: inline-block;
     top: 23px;
     left: 17px;
     margin-right: 25px;
-}
+} */
 .header__birthday {
     position: relative;
     top: 23px;
@@ -265,8 +266,8 @@ html, button, input, textarea, select {
 }
 /* 开始交易 投资 存入资金 */
 .header__action-list {
-    position: relative;
-    top: 26px;
+    float:right;
+    margin-top:25px;
     display: inline-block;
     vertical-align: top;
     text-align: center;
@@ -286,42 +287,43 @@ html, button, input, textarea, select {
     display: inline-block;
     padding: 10px 21px;
     outline: 0;
-    border-radius: 9px;
-    background: -webkit-linear-gradient(#444c4d,#394343);
-    background: linear-gradient(#444c4d,#394343);
-    background-color: #394343;
-    color: #a6cc38;
+    border-radius: 6px;
+    /* background: -webkit-linear-gradient(#444c4d,#394343);
+    background: linear-gradient(#444c4d,#394343); */
+    background-color: #fff;
+    color: #000;
     vertical-align: top;
-    text-shadow: 0 -1px #212828;
+    border:1px solid #000;
+    /* text-shadow: 0 -1px #212828; */
 }
-.header__action_type_primary {
+/* .header__action_type_primary {
     background: -webkit-linear-gradient(#ed7330 1px,#d25407);
     background: linear-gradient(#ed7330 1px,#d25407);
     background-color: #d25407;
     color: #fff;
     text-shadow: 0 -1px 0 #bb420b;
-}
-.header__action::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border: 1px solid #2e3737;
-    border-radius: 7px;
-    box-shadow: 0 1px rgba(255,255,255,.05) inset;
-    content: '';
+} */
+.header__action_type_primary {
+    /* background: -webkit-linear-gradient(#ed7330 1px,#da4911);
+    background: linear-gradient(#ed7330 1px,#da4911); */
+    background-color: #da4911;
+    color: #fff;
+    /* text-shadow: 0 -1px 0 #bb420b; */
+    border:none;
+    border-bottom:2px solid #4163bb;
 }
 .header__action_type_primary::before {
     box-shadow: 0 1px rgba(255,255,255,.2) inset;
 }
 .header__action:focus, .header__action:hover {
-    background: -webkit-linear-gradient(#f7a82d 1px,#bd6309);
-    background: linear-gradient(#f7a82d 1px,#bd6309);
-    background-color: #bd6309;
+    /* background: -webkit-linear-gradient(#f7a82d 1px,#bd6309);
+    background: linear-gradient(#f7a82d 1px,#bd6309); */
+    background-color: #da4911;
     color: #fff;
     text-decoration: none;
-    text-shadow: 0 -1px 0 #b05912;
+    border:none;
+    border-bottom:2px solid #4163bb;
+    /* text-shadow: 0 -1px 0 #b05912; */
 }
 /* 在线客服 QQ交谈 */
 .header__contact-list {
