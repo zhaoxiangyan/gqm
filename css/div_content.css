@@ -289,7 +289,8 @@ p {
     /* position: absolute; */
     left: 0;
     bottom: 0;
-    background: rgba(25,25,55,0.6);
+    /* background: rgba(25,25,55,0.6);*/
+    background:rgba(171,60,23,0.9);
     border-top: 1px solid #fff;
     width: 100%;
     text-align: center;
@@ -317,7 +318,7 @@ p {
     color: #fff;
     line-height: 1;
     float: left;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 .home_slider_bottom .item .text {
     font-size: 9px;
@@ -329,19 +330,19 @@ p {
 }
 .home_slider_bottom .item.item1 .text {
     width: 105px;
-    padding-top: 6px;
+    padding-top: 14px;
 }
 .home_slider_bottom .item.item3 .text {
-    width: 53px;
+    width: 100px;
     line-height: 24px;
 }
 .home_slider_bottom .item.item5 .text {
-    width: 51px;
+    width: 123px;
     padding-top: 14px;
 }
 .home_slider_bottom .item.item6 .text {
-    width: 70px;
-    padding-top: 6px;
+    width: 179px;
+    padding-top: 14px;
 }
 .width100{
     width:100%;
@@ -484,7 +485,7 @@ p {
     padding-bottom: 27px;
 }
 .main__forex-boon-content {
-    padding-top: 18px;
+    padding-top: 22px;
 }
 .box_rounded_yes::before, .box_rounded_yes>.box__content {
     border-radius: 6px;
@@ -502,7 +503,7 @@ p {
     margin-bottom: 0;
 }
 .main__forex-boon-item {
-    margin-bottom: 9px;
+    margin-bottom: 19px;
 }
 .list_type_disc>li {
     position: relative;
@@ -776,7 +777,7 @@ p {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 180px;
     -ms-flex: 0 0 180px;
-    flex: 0 0 180px;
+    flex: 0 0 90px;
 }
 .rating-pamm__indicators {
     display: -webkit-box;
@@ -825,9 +826,9 @@ p {
     display: flex;
     padding: 8px 10px 0;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 350px;
-    -ms-flex: 0 0 350px;
-    flex: 0 0 350px;
+    -webkit-flex: 0 0 440px;
+    -ms-flex: 0 0 440px;
+    flex: 0 0 440px;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -845,6 +846,13 @@ p {
     -webkit-flex: 0 0 85px;
     -ms-flex: 0 0 85px;
     flex: 0 0 85px;
+}
+.rating-pamm__indicator-four {
+    margin-right: 10px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 90px;
+    -ms-flex: 0 0 90px;
+    flex: 0 0 90px;
 }
 .rating-pamm__indicator-three {
     text-align: right;
