@@ -356,3 +356,15 @@ html, button, input, textarea, select {
 .qq-chat_type_icon {
     background-image: url('../img/header_qq.png');
 }
+
+a, .link {
+    color: #0289cc;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:active, a:hover {
+    outline: 0;
+}
+a:hover, .link:hover, .link_hover_yes {
+    text-decoration: underline;
+}
