@@ -1,0 +1,228 @@
+.sidebar-box {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    margin-top: -270px;
+    height: auto;
+    height: 413px\0;
+    border: solid #9BB6D4 1px;
+    border-radius: 4px;
+    background: #fff;
+    z-index: 500;
+}
+.sidebar-box p{
+    margin:0;
+}
+.sidebar-box li {
+    position: relative;
+    width: 72px;
+    text-align: right;
+    font-size: 0;
+}
+.sidebar-box .li-line {
+    border: solid #9BB6D4;
+    border-width: 1px 0;
+}
+.sidebar-box .li-line-bottom {
+    border: solid #9BB6D4;
+    border-width: 0 0 1px 0;
+}
+.side-hoverout {
+    position: absolute;
+    right: 73px;
+    top: -1px;
+    display: inline-block;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 1;
+}
+.sidebar-box a {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 8px 0;
+    color: #446b96;
+    font-size: 13px;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 2;
+    text-align: center;
+}
+.sidebar-box a:hover {
+    border-radius: 0;
+}
+.sidebar-box a:hover, .side-hoverout a:hover .side-hover-w {
+    background: #5279A5;
+    color: #fff;
+    text-decoration: none;
+}
+.side-hoverout a {
+    display: inline-block;
+    width: 70px;
+    padding: 0;
+    margin-right: 5px;
+    background: none;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.sidebar-box .side-hover-w {
+    border: solid #9BB6D4 1px;
+    border-radius: 4px;
+    padding: 8px 0;
+    background: #fff;
+    overflow: hidden;
+}
+.sidebar-box .side-icon {
+    background: url('../img/sidebg.png') no-repeat;
+}
+.sidebar-box .side-icon {
+    display: inline-block;
+    width: 34px;
+    height: 36px;
+}
+.sidebar-box .side-i6 {
+    width: 34px;
+    height: 30px;
+    background-position: -84px 0;
+}
+.sidebar-box .side-i7 {
+    width: 34px;
+    height: 30px;
+    background-position: -84px -36px;
+}
+.sidebar-box .side-i1 {
+    width: 38px;
+    height: 29px;
+    background: url('../img/chat-a2.gif') no-repeat;
+}
+.sidebar-box .side-i2 {
+    width: 36px;
+    height: 30px;
+    background-position: 0 -35px;
+}
+.side-weix-anim {
+    position: relative;
+    width: 122px;
+    height: 235px;
+    padding-right: 5px;
+    line-height: 0;
+    text-align: right;
+    background: #fff url('../img/side-weix.png') no-repeat center;
+    border: solid #9BB6D4 1px;
+    border-radius: 4px;
+}
+.side-weix-anim .expert-fl-im {
+    position: absolute;
+    left: 10px;
+    bottom: 30px;
+}
+.sidebar-box .side-i8 {
+    width: 34px;
+    height: 33px;
+    background-position: -82px -68px;
+}
+.sidebar-box .side-i9 {
+    width: 37px;
+    height: 33px;
+    background-position: -82px -112px;
+}
+.sidebar-box .side-i3 {
+    width: 36px;
+    height: 33px;
+    background-position: 0 -69px;
+}
+.sidebar-box .side-i4 {
+    width: 36px;
+    height: 34px;
+    background-position: 0 -102px;
+}
+.last-hover-f {
+    top: auto;
+    bottom: -1px;
+}
+.side-weix {
+    padding-right: 5px;
+    line-height: 0;
+    text-align: right;
+}
+.side-hoverout .side-down2-fon {
+    width: 96px;
+}
+.side-weix img {
+    border: solid #9BB6D4 1px;
+    border-radius: 4px;
+    vertical-align:baseline;
+}
+.sidebar-box .side-i11 {
+    width: 34px;
+    height: 30px;
+    background-position: 0 -176px;
+}
+.sidebar-box .side-i10 {
+    width: 43px;
+    height: 33px;
+    background-position: -76px -144px;
+}
+.sidebar-box .side-i12 {
+    width: 52px;
+    height: 36px;
+    background-position: 0 -211px;
+}
+
+.sidebar-box a:hover .side-i1 {
+    background: url('../img/chat-a3.gif') no-repeat;
+}
+.sidebar-box a:hover .side-i2 {
+    width: 36px;
+    height: 30px;
+    background-position: -40px -35px;
+}
+.sidebar-box a:hover .side-i3 {
+    width: 36px;
+    height: 33px;
+    background-position: -40px -69px;
+}
+.sidebar-box a:hover .side-i4 {
+    width: 36px;
+    height: 34px;
+    background-position: -40px -102px;
+}
+.sidebar-box a:hover .side-i11 {
+    background-position: -40px -176px;
+}
+.sidebar-box a:hover .side-i10 {
+    width: 43px;
+    height: 33px;
+    background-position: -126px -144px;
+}
+.sidebar-box a:hover .side-i12 {
+    background-position: -56px -211px;
+}
+.wex-anim-hf {
+    right: 0px;
+}
+.sidebar-box a:hover .side-i6 {
+    width: 34px;
+    height: 30px;
+    background-position: -130px 0;
+}
+.sidebar-box a:hover .side-i7 {
+    width: 34px;
+    height: 30px;
+    background-position: -130px -36px;
+}
+.sidebar-box a:hover .side-i8 {
+    width: 34px;
+    height: 33px;
+    background-position: -130px -68px;
+}
+.sidebar-box a:hover .side-i9 {
+    width: 37px;
+    height: 33px;
+    background-position: -128px -112px;
+}
+.side-hoverout a:hover {
+    border-radius: 4px;
+}

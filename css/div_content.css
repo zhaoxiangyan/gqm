@@ -15,6 +15,9 @@ h1 {
     margin-bottom: 9px;
 }
 /* 轮播图 */
+.minwidth950{
+    min-width:950px;
+}
 .promoblock {
     position: relative;
     margin-bottom: 18px;
@@ -23,8 +26,8 @@ h1 {
     background: #f2f4f4;
 }
 .promoblock_type_main {
-    margin-bottom: 0;
-    height: 288px;
+    margin-bottom: 27px;
+    height: 500px;
     font-size: 15px;
 }
 /* 轮播上一个下一个按钮 */
@@ -58,6 +61,9 @@ h1 {
 .promoblock_active_yes .promoblock__arrow {
     display: block;
 }
+.grid__container.title{
+    display:none;
+}
 /* 轮播图片 */
 .promoblock__items {
     position: absolute;
@@ -67,6 +73,14 @@ h1 {
     left: 0;
     -ms-touch-action: none;
     touch-action: none;
+    overflow:hidden;
+}
+.promoblock__items li{
+    width:100%;
+}
+.promoblock__items li img{
+    width:100%;
+    height:500px;
 }
 .promoblock_type_main .promoblock__items {
     overflow: visible;
@@ -83,7 +97,7 @@ h1 {
     color: #fff;
 }
 .promoblock__item_active_yes {
-    z-index: 1;
+    /* z-index: 1; */
     display: block;
     opacity: 1;
     outline: 0;
@@ -145,13 +159,13 @@ p {
     outline: 0;
     border: 0;
     border-radius: 6px;
-    background: -webkit-linear-gradient(#a6c54c,#688811);
-    background: linear-gradient(#a6c54c,#688811);
-    background-color: #688811;
+    background: -webkit-linear-gradient(#da7711,#da4911);
+    background: linear-gradient(#da7711,#da4911);
+    background-color: #da4911;
     color: #fff;
     vertical-align: top;
     text-align: center;
-    text-shadow: 0 -1px 0 #5b721b;
+    text-shadow: 0 -1px 0 #da4911;
     cursor: pointer;
     -webkit-appearance: none;
 }
@@ -248,53 +262,56 @@ p {
 /* 左下角五个按钮 */
 .promoblock__controls {
     position: absolute;
-    right: 10px;
-    bottom: 9px;
+    left:50%;
+    margin-left:-156px;
+    bottom: 100px;
     z-index: 3;
-    padding: 4px 5px 3px;
-    border-radius: 6px;
-    background: rgba(22,26,17,.6);
+    /* padding: 4px 5px 3px; */
+    /* border-radius: 6px; */
+    /* background: rgba(22,26,17,.6); */
+    /* background:#fff; */
 }
 .promoblock__control {
     position: relative;
     overflow: hidden;
-    margin: 0;
+    margin: 0 2px 0 0;
     padding: 0;
-    width: 20px;
-    height: 20px;
+    width: 60px;
+    height: 6px;
     outline: 0;
     border: 0;
-    background: 0;
+    background: #111;
     text-indent: -999em;
 }
-.promoblock__control:before {
+/* .promoblock__control:before {
     position: absolute;
     top: 5px;
     right: 5px;
     bottom: 5px;
     left: 5px;
     border-radius: 10px;
-    background: -webkit-linear-gradient(#8d8d8d,#e8e9e6);
-    background: linear-gradient(#8d8d8d,#e8e9e6);
+    background: -webkit-linear-gradient(#111,#e8e9e6);
+    background: linear-gradient(#111,#e8e9e6);
     background-color: #e8e9e6;
     content: '';
-}
-.promoblock__control_state_active:before {
-    background: -webkit-linear-gradient(#f7a82d,#c36709);
-    background: linear-gradient(#f7a82d,#c36709);
-    background-color: #f7a82d;
+} */
+.promoblock__control_state_active {
+    /* background: -webkit-linear-gradient(#f7a82d,#a8181b);
+    background: linear-gradient(#f7a82d,#a8181b);
+    background-color: #f7a82d; */
+    background-color:#a8181b;
 }
 /* 5  21 2  1 */
 .home_slider_bottom {
-    /* position: absolute; */
+    position: absolute;
     left: 0;
     bottom: 0;
     /* background: rgba(25,25,55,0.6);*/
-    background:rgba(171,60,23,0.9);
+    background:rgba(171,60,23,0.7);
     border-top: 1px solid #fff;
     width: 100%;
     text-align: center;
-    margin-bottom:27px;
+    /* margin-bottom:27px; */
 }
 .home_slider_bottom .inner {
     overflow: hidden;
@@ -321,7 +338,7 @@ p {
     /* margin-right: 10px; */
 }
 .home_slider_bottom .item .text {
-    font-size: 9px;
+    font-size: 12px;
     line-height: 16px;
     color: #fff;
     padding-top: 10px;
@@ -1877,7 +1894,7 @@ p {
     outline: 0;
 }
 .slider_type_payments {
-    height: 54px;
+    height: 65px;
     border-radius: 6px;
 }
 .slider__deposit {
@@ -1897,7 +1914,7 @@ p {
     color: #fff;
     text-align: center;
     text-shadow: 0 -1px 0 #5b721b;
-    line-height: 14px;
+    line-height: 19px;
 }
 .slider__deposit:hover {
     background: -webkit-linear-gradient(#f6a72c,#c36709);
@@ -1919,11 +1936,11 @@ p {
     touch-action: none;
 }
 .slider_type_payments .slider__content {
-    top: -9px;
+    top: -3px;
     right: -10px;
-    bottom: -9px;
+    bottom: -4px;
     left: 82px;
-    padding: 9px 10px 9px 27px;
+    padding: 3px 10px 4px 27px;
 }
 .slider__content:before, .slider__content:after {
     position: absolute;
@@ -1965,7 +1982,7 @@ p {
 .slider_type_payments .slider__list {
     display: -ms-flexbox;
     display: flex;
-    padding: 9px 10px 9px 27px;
+    padding: 3px 10px 4px 27px;
 }
 .slider__item {
     display: inline-block;
@@ -1976,11 +1993,11 @@ p {
     white-space: normal;
 }
 .slider_type_payments .slider__item {
-    min-width: 78px;
+    min-width: 129px;
 }
 .slider_type_payments .slider__item {
-    margin-right: 31px;
-    width: 78px;
+    margin-right: 11px;
+    width: 129px;
     border-radius: 6px;
     background: -webkit-linear-gradient(#f4f5f5,#e4e6e6);
     background: linear-gradient(#f4f5f5,#e4e6e6);
@@ -2099,3 +2116,30 @@ p {
     background-image: url('../img/type_deposit_bg.png');
 }
 /* 开设账户 下载平台 入金并交易 */
+/* 返回顶部 */
+.page__action-buttons {
+    position: fixed;
+    right: 0;
+    bottom: 27px;
+    z-index: 100;
+    padding-right: 30px;
+}
+.page__back-to-top {
+    display: block;
+    overflow: hidden;
+    width: 45px;
+    height: 45px;
+    background: 0 0 no-repeat;
+    text-indent: -1000%;
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity .7s ease;
+    pointer-events: none;
+}
+.page__back-to-top_active_yes {
+    opacity: 1;
+    pointer-events: auto;
+}
+.page__back-to-top {
+    background-image: url('../img/top_icon.svg');
+}

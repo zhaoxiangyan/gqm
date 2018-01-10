@@ -309,8 +309,8 @@ html, button, input, textarea, select {
     background-color: #da4911;
     color: #fff;
     /* text-shadow: 0 -1px 0 #bb420b; */
-    border:none;
-    border-bottom:2px solid #4163bb;
+    border:1px solid #da4911;
+    /* border-bottom:2px solid #4163bb; */
 }
 .header__action_type_primary::before {
     box-shadow: 0 1px rgba(255,255,255,.2) inset;
@@ -321,8 +321,8 @@ html, button, input, textarea, select {
     background-color: #da4911;
     color: #fff;
     text-decoration: none;
-    border:none;
-    border-bottom:2px solid #4163bb;
+    border:1px solid #da4911;
+    /* border-bottom:2px solid #4163bb; */
     /* text-shadow: 0 -1px 0 #b05912; */
 }
 /* 在线客服 QQ交谈 */

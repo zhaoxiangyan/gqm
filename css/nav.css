@@ -10,7 +10,7 @@
     flex: 0 0 auto;
 }
 .menu{
-    margin-bottom: 9px;
+    margin-bottom: 0px;
 }
 .menu:after {
     position: absolute;
@@ -22,7 +22,9 @@
     content: '';
 }
 .menu, .menu:after {
-    background-image: url('../img/menu_bg.png');
+    background-image: url('../img/menu_bg1.png');
+    border-bottom:1px solid #2257a7;
+    border-top:1px solid #2257a7;
 }
 .menu__list {
     display: table;
@@ -43,7 +45,7 @@
     content: '';
 }
 .menu__itembefore:before {
-    background-image: url('../img/menu_item_before_bg.png');
+    background-image: url('../img/menu_item_before_bg1.png');
 }
 .menu__item:after {
     position: absolute;
@@ -68,7 +70,8 @@
     right: -6px;
     left: -6px;
     z-index: 2;
-    height: 72px;
+    /* height: 72px; */
+    height:63px;
 }
 .menu__btn:before {
     background: #fff;
@@ -125,7 +128,7 @@
     background-position: 100% 0;
 }
 .menu__deco:before, .menu__deco:after {
-    background-image: url('../img/menu__deco_before_bg.png');
+    background-image: url('../img/menu_deco_before_bg1.png');
 }
 /* 隐藏的子目录 */
 .menu__sub {
