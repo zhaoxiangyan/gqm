@@ -20,7 +20,7 @@ $(function(){
     function autoplay() {
         timer = setInterval(function() {
             index++;
-            if (index > 4) {
+            if (index > 3) {
                 index = 0;
             }
             $(".promoblock__items li").eq(index).addClass("promoblock__item_active_yes").siblings().removeClass("promoblock__item_active_yes");

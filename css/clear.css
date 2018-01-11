@@ -87,3 +87,6 @@ textarea {
     *display: inline;
     *zoom: 1;
 }
+.display_none{
+    display:none!important;
+}

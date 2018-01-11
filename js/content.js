@@ -19,4 +19,17 @@ $(document).ready(function(){
             $(".page__back-to-top").removeClass('page__back-to-top_active_yes');
         }
     });
+    // 流动性合作伙伴
+    function sscroll(obj){
+        /*往左*/ 
+        var tmp = (obj.scrollLeft)++; 
+        if (obj.scrollLeft == tmp) { 
+        obj.innerHTML += obj.innerHTML; 
+        } 
+        // if (obj.scrollLeft >= obj.firstChild.offsetHeight) { 
+        // obj.scrollLeft = 0; 
+        // } 
+    };
+    setInterval(()=>{sscroll(document.getElementById('scrollobj'))}, 10)
+    // setInterval(sscroll(document.getElementById('scrollobj')),10);
 }); 

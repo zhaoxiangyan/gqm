@@ -2,6 +2,9 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 	<title>GQM官方网站</title>
 	<meta name="keywords" content="GQM官方网站">
 	<meta name="viewport" content="width=1000">
@@ -51,7 +54,7 @@
 		</div>
 	</div>
 	<div class="header_content">
-		<img class="header__logo-ball" src="img/gqm_logo.png" alt="">
+		<img class="header__logo-ball" src="img/gqfx_logo.png" alt="">
 		<!-- <a class="header__birthday "  href="#">载誉十八年，诚信铸辉煌！</a> -->
 		<ul class="header__action-list">
 			<li	class="header__action-item">
@@ -369,10 +372,10 @@
 		<div class="grid__row s_mb_27 flex__row">
 			<div class="box box_type_default box_bordered_yes box_rounded_yes main__forex-boon grid__col s_width_320 flex__col">
 				<div class="box__header">
-					<p class="main__forex-boon-headline">
+					<!-- <p class="main__forex-boon-headline">
 						<img src="img/forex_headline_text.png"> 
-					</p>
-					<p class="main__forex-boon-subheadline">5大交易亮点</p>
+					</p> -->
+					<p class="main__forex-boon-subheadline">五大交易亮点</p>
 				</div>
 				<div class="box__content main__forex-boon-content s_pb_27">
 					<ul class="main__forex-boon-list list list_type_disc s_pb_18">
@@ -390,7 +393,7 @@
 						</li>
 						<li class="main__forex-boon-item">
 							<p class="main__forex-boon-title">STP交易模式</p>
-							<p class="main__forex-boon-description">直通式交易系统，<br>按银行的价位即时交易</p>
+							<p class="main__forex-boon-description">直通式交易系统，按银行的价位即时交易</p>
 						</li>
 						<li class="main__forex-boon-item">
 							<p class="main__forex-boon-title">智能化交易系统</p>
@@ -402,7 +405,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="tabs grid__col s_width_620 main__pamm">
+			<div class="tabs grid__col s_width_620 main__pamm display_none">
 					<p class="tabs__title tabs__title_active_yes">
 						<a class="tabs__control" href="#pamm=accounts_rating">账户收益排行榜</a>
 					</p>
@@ -603,9 +606,200 @@
 						</div>
 					</div>		
 			</div>
+			<!-- 货币对 指数 -->
+			<div class="grid__col s_width_620">
+				<div class="tabs js-quotes-informer main__tabs-informer">
+						<p class="tabs__title tabs__title_active_yes"><a class="tabs__control" href="javascript:void(0);">货币对</a><span class="arrow_up"></span></p>
+						<div class="tabs__body tabs__body_indented_no tabs__body_active_yes">
+							<table class="table one table_theme_dark table_rounded_b table_bordered_horisont table_without_stripes table_hoverable_no main__informer-table">
+								<thead class="table__row_size_small">
+									<tr>
+										<th class="s_width_160">交易品种</th>
+										<th class="s_width_120">卖价</th>
+										<th class="s_width_120">买价</th>
+										<th class="s_width_70">点差</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="main__quote-symbol main__quote-symbol_type_eurusd js-quote-eurusd">EURUSD</td>
+										<td class="main__quote-bid-container">
+											<div class="main__quote main__quote_arrow_up js-bid-eurusd">1.19643</div>
+										</td>
+										<td class="main__quote-ask-container">
+											<div class="main__quote main__quote_arrow_up js-ask-eurusd">1.19652</div>
+										</td>
+										<td>
+											<strong class="js-spread-eurusd">0.9</strong>
+										</td>
+									</tr>
+									<tr>
+										<td class="main__quote-symbol main__quote-symbol_type_gbpusd js-quote-gbpusd">GBPUSD</td>
+										<td class="main__quote-bid-container">
+											<div class="main__quote main__quote_arrow_up js-bid-gbpusd">1.35648</div>
+										</td>
+										<td class="main__quote-ask-container">
+											<div class="main__quote main__quote_arrow_up js-ask-gbpusd">1.35663</div>
+										</td>
+										<td>
+											<strong class="js-spread-gbpusd">1.5</strong>
+										</td>
+									</tr>
+									<tr>
+										<td class="main__quote-symbol main__quote-symbol_type_eurjpy js-quote-eurjpy">EURJPY</td>
+										<td class="main__quote-bid-container">
+											<div class="main__quote main__quote_arrow_up js-bid-eurjpy">134.869</div>
+										</td>
+										<td class="main__quote-ask-container">
+											<div class="main__quote main__quote_arrow_up js-ask-eurjpy">134.885</div>
+										</td>
+										<td>
+											<strong class="js-spread-eurjpy">1.6</strong>
+										</td>
+									</tr>
+									<tr>
+										<td class="main__quote-symbol main__quote-symbol_type_usdjpy js-quote-usdjpy">USDJPY</td>
+										<td class="main__quote-bid-container">
+											<div class="main__quote main__quote_arrow_up js-bid-usdjpy">112.726</div>
+										</td>
+										<td class="main__quote-ask-container">
+											<div class="main__quote main__quote_arrow_up js-ask-usdjpy">112.736</div>
+										</td>
+										<td>
+											<strong class="js-spread-usdjpy">1.0</strong>
+										</td>
+									</tr>
+									<tr>
+										<td class="main__quote-symbol main__quote-symbol_type_usdchf js-quote-usdchf">USDCHF</td>
+										<td class="main__quote-bid-container">
+											<div class="main__quote main__quote_arrow_up js-bid-usdchf">0.97759</div>
+										</td>
+										<td class="main__quote-ask-container">
+											<div class="main__quote main__quote_arrow_up js-ask-usdchf">0.97766</div>
+										</td>
+										<td>
+											<strong class="js-spread-usdchf">0.7</strong>
+										</td>
+									</tr>
+									<tr>
+										<td class="main__quote-symbol main__quote-symbol_type_usdcad js-quote-usdcad">USDCAD</td>
+										<td class="main__quote-bid-container">
+											<div class="main__quote main__quote_arrow_up js-bid-usdcad">1.24131</div>
+										</td>
+										<td class="main__quote-ask-container">
+											<div class="main__quote main__quote_arrow_up js-ask-usdcad">1.24135</div>
+										</td>
+										<td>
+											<strong class="js-spread-usdcad">0.4</strong>
+										</td>
+									</tr>
+									<tr>
+										<td class="main__quote-symbol main__quote-symbol_type_audusd js-quote-audusd">AUDUSD</td>
+										<td class="main__quote-bid-container">
+											<div class="main__quote main__quote_arrow_up js-bid-audusd">0.78525</div>
+										</td>
+										<td class="main__quote-ask-container">
+											<div class="main__quote main__quote_arrow_up js-ask-audusd">0.78543</div>
+										</td>
+										<td>
+											<strong class="js-spread-audusd">1.8</strong>
+										</td>
+									</tr>
+									<tr>
+										<td class="main__quote-symbol main__quote-symbol_type_nzdusd js-quote-nzdusd">NZDUSD</td>
+										<td class="main__quote-bid-container">
+											<div class="main__quote main__quote_arrow_up js-bid-nzdusd">0.71833</div>
+										</td>
+										<td class="main__quote-ask-container">
+											<div class="main__quote main__quote_arrow_up js-ask-nzdusd">0.71859</div>
+										</td>
+										<td>
+											<strong class="js-spread-nzdusd">2.6</strong>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p class="tabs__title"><a class="tabs__control" href="javascript:void(0);">商品</a><span class="arrow_up"></span></p>
+						<div class="tabs__body tabs__body_indented_no">
+							<table class="table two table_theme_dark table_rounded_b table_bordered_horisont table_without_stripes table_hoverable_no main__informer-table">
+								<thead class="table__row_size_small">
+									<tr>
+										<th class="s_width_160">交易品种</th>
+										<th class="s_width_120">卖价</th>
+										<th class="s_width_120">买价</th>
+										<th class="s_width_70">点差</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="main__quote-symbol main__quote-symbol_type_spx500 js-quote-spx500"> SPX500</td>
+										<td class="main__quote-bid-container">
+											<div class="main__quote main__quote_arrow_up js-bid-spx500">2747.6</div>
+										</td>
+										<td class="main__quote-ask-container">
+											<div class="main__quote main__quote_arrow_up js-ask-spx500">2748.4</div>
+										</td>
+										<td><strong class="js-spread-spx500">0.8</strong></td>
+									</tr>
+									<tr>
+										<td class="main__quote-symbol main__quote-symbol_type_nq100 js-quote-nq100"> NQ100</td>
+										<td class="main__quote-bid-container">
+											<div class="main__quote main__quote_arrow_up js-bid-nq100">6685.8</div>
+										</td>
+										<td class="main__quote-ask-container">
+											<div class="main__quote main__quote_arrow_up js-ask-nq100">6686.8</div>
+										</td>
+										<td><strong class="js-spread-nq100">1.0</strong></td>
+									</tr>
+									<tr>
+										<td class="main__quote-symbol main__quote-symbol_type_dax30 js-quote-dax30"> DAX30</td>
+										<td class="main__quote-bid-container">
+											<div class="main__quote main__quote_arrow_up js-bid-dax30">13364.8</div>
+										</td>
+										<td class="main__quote-ask-container">
+											<div class="main__quote main__quote_arrow_up js-ask-dax30">13365.8</div>
+										</td>
+										<td><strong class="js-spread-dax30">1.0</strong></td>
+									</tr>
+									<tr>
+										<td class="main__quote-symbol main__quote-symbol_type_ftse100 js-quote-ftse100"> FTSE100</td>
+										<td class="main__quote-bid-container">
+											<div class="main__quote main__quote_arrow_up js-bid-ftse100">7710.7</div>
+										</td>
+										<td class="main__quote-ask-container">
+											<div class="main__quote main__quote_arrow_up js-ask-ftse100">7712.7</div>
+										</td>
+										<td><strong class="js-spread-ftse100">2.0</strong></td>
+									</tr>
+									<tr>
+										<td class="main__quote-symbol main__quote-symbol_type_cac40 js-quote-cac40"> CAC40</td>
+										<td class="main__quote-bid-container">
+											<div class="main__quote main__quote_arrow_up js-bid-cac40">5489.5</div>
+										</td>
+										<td class="main__quote-ask-container">
+											<div class="main__quote main__quote_arrow_up js-ask-cac40">5491.6</div>
+										</td>
+										<td><strong class="js-spread-cac40">2.1</strong></td>
+									</tr>
+									<tr>
+										<td class="main__quote-symbol main__quote-symbol_type_nikk225 js-quote-nikk225"> NIKK225</td>
+										<td class="main__quote-bid-container">
+											<div class="main__quote main__quote_arrow_up js-bid-nikk225">23837</div>
+										</td>
+										<td class="main__quote-ask-container">
+											<div class="main__quote main__quote_arrow_up js-ask-nikk225">23893</div>
+										</td>
+										<td><strong class="js-spread-nikk225">5.6</strong></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+				</div>
+			</div>
 		</div>
 		<!-- 积分奖励计划 -->
-		<div class="main__cashback">
+		<div class="main__cashback display_none">
 			<a href="#" class="main__cashback-link"></a>
 			<div class="main__cashback-title">
 				<p class="main__cashback-title-text">GQM入金奖励计划</p>
@@ -641,6 +835,14 @@
 					</div>
 					<p class="main__cashback-connected-desc">已奖励次数</p>
 			   </div>
+		</div>
+		<!-- 流动性合作伙伴 -->
+		<div class="grid__row s_mb_27 partner">
+			<div class="inner">
+				<h2>流动性合作伙伴</h2>
+				<ul id="scrollobj"><li><img src="img/hsbc.png"></li><li><img src="img/miz.png"></li><li><img src="img/cb.png"></li><li><img src="img/cs.png"></li><li><img src="img/mufg.png"></li><li><img src="img/rbs.png"></li><li><img src="img/db.png"></li><li><img src="img/boa.png"></li><li><img src="img/ubs.png"></li><li><img src="img/Barclays-logo.png"></li><li><img src="img/bnp logo.png"></li><li><img src="img/golden sachs logo.png"></li><li><img src="img/morgan logo.png"></li></ul>
+				<p class="line"></p>
+			</div>
 		</div>
 		<!-- 新闻 货币对 -->
 		<div class="grid__row s_mb_27 flex__row">
@@ -724,7 +926,7 @@
 			<!-- 货币对 指数 -->
 			<div class="grid__col grid__col_w_12">
 				<div class="tabs js-quotes-informer main__tabs-informer">
-						<p class="tabs__title tabs__title_active_yes"><a class="tabs__control" href="javascript:void(0);">货币对</a></p>
+						<p class="tabs__title tabs__title_active_yes"><a class="tabs__control" href="javascript:void(0);">货币对</a><span class="arrow_up"></span></p>
 						<div class="tabs__body tabs__body_indented_no tabs__body_active_yes">
 							<table class="table table_theme_dark table_rounded_b table_bordered_horisont table_without_stripes table_hoverable_no main__informer-table">
 								<thead class="table__row_size_small">
@@ -835,7 +1037,7 @@
 								</tbody>
 							</table>
 						</div>
-						<p class="tabs__title"><a class="tabs__control" href="javascript:void(0);">商品</a></p>
+						<p class="tabs__title"><a class="tabs__control" href="javascript:void(0);">商品</a><span class="arrow_up"></span></p>
 						<div class="tabs__body tabs__body_indented_no">
 							<table class="table table_theme_dark table_rounded_b table_bordered_horisont table_without_stripes table_hoverable_no main__informer-table">
 								<thead class="table__row_size_small">
@@ -989,7 +1191,7 @@
 				</div>
 		</div>
 		<!-- 金融市场分析 -->
-		<div class="grid__row s_mb_27">
+		<div class="grid__row s_mb_27 display_none">
 			<div class="grid__col grid__col_w_24">
 				<div class="box box_type_default box_bordered_yes box_rounded_yes">
 						<p class="box__header">金融市场分析</p>

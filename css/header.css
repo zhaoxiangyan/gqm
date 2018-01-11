@@ -231,9 +231,9 @@ html, button, input, textarea, select {
     content: '';
 }
 .header__logo-ball {
-    width: 123px;
+    width: 150px;
     height: auto;
-    top: -14px;
+    top: 0px;
     position: absolute;
     left: 0;
 }
