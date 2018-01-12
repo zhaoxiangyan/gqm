@@ -5,4 +5,12 @@ $(document).ready(function(){
     },function(){
         $(this).removeClass('menu__item_hover_yes');
     });
+    // 五大交易亮点hover
+    $(".ea_product_min_goods_part").hover(function(){
+        $(this).find(".ea_product_min_goods_before").slideUp();
+        $(this).find(".ea_product_min_goods_after").slideDown();
+    },function(){
+        $(this).find(".ea_product_min_goods_before").slideDown();
+        $(this).find(".ea_product_min_goods_after").slideUp();
+    });
 }); 

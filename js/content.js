@@ -30,6 +30,9 @@ $(document).ready(function(){
         // obj.scrollLeft = 0; 
         // } 
     };
-    setInterval(()=>{sscroll(document.getElementById('scrollobj'))}, 10)
+    setInterval(()=>{sscroll(document.getElementById('scrollobj'))}, 10);
     // setInterval(sscroll(document.getElementById('scrollobj')),10);
+    $('.ea_plantform_min_list_mid_title').click(function(){
+        $(".ea_plantform_min_list .ea_plantform_min_list_mid").eq($(this).index()).show().siblings().hide();
+    });
 }); 
