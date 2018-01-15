@@ -5,7 +5,8 @@
     margin-top: -270px;
     height: auto;
     height: 413px\0;
-    border: solid #9BB6D4 1px;
+    /* border: solid #9BB6D4 1px; */
+    border:1px solid #191935;
     border-radius: 4px;
     background: #fff;
     z-index: 500;
@@ -20,11 +21,13 @@
     font-size: 0;
 }
 .sidebar-box .li-line {
-    border: solid #9BB6D4;
+    /* border: solid #9BB6D4; */
+    border:solid #191935;
     border-width: 1px 0;
 }
 .sidebar-box .li-line-bottom {
-    border: solid #9BB6D4;
+    /* border: solid #9BB6D4; */
+    border:solid #191935;
     border-width: 0 0 1px 0;
 }
 .side-hoverout {
@@ -42,7 +45,8 @@
     display: inline-block;
     width: 100%;
     padding: 8px 0;
-    color: #446b96;
+    /* color: #446b96; */
+    color:#191935;
     font-size: 13px;
     background: #fff;
     border-radius: 4px;
@@ -54,7 +58,8 @@
     border-radius: 0;
 }
 .sidebar-box a:hover, .side-hoverout a:hover .side-hover-w {
-    background: #5279A5;
+    /* background: #5279A5; */
+    background:#191935;
     color: #fff;
     text-decoration: none;
 }
@@ -68,7 +73,9 @@
     overflow: hidden;
 }
 .sidebar-box .side-hover-w {
-    border: solid #9BB6D4 1px;
+    /* border: solid #9BB6D4 1px; */
+    border:solid #191935;
+    border-width:1px;
     border-radius: 4px;
     padding: 8px 0;
     background: #fff;
@@ -85,7 +92,7 @@
 .sidebar-box .side-i6 {
     width: 34px;
     height: 30px;
-    background-position: -84px 0;
+    background-position: -84px -178px;
 }
 .sidebar-box .side-i7 {
     width: 34px;
@@ -206,7 +213,7 @@
 .sidebar-box a:hover .side-i6 {
     width: 34px;
     height: 30px;
-    background-position: -130px 0;
+    background-position: -122px -178px;
 }
 .sidebar-box a:hover .side-i7 {
     width: 34px;

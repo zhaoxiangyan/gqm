@@ -83,6 +83,15 @@ h1 {
     width:100%;
     height:500px;
 }
+@media screen and (max-width: 1920px) {
+    .promoblock__items li img{
+        position:relative;
+        width:1920px;
+        height:500px;
+        left:50%;
+        margin-left:-960px;
+    }
+}
 .promoblock_type_main .promoblock__items {
     overflow: visible;
 }
@@ -645,14 +654,18 @@ p {
     line-height:49px;
     width:120px;
     text-align:center;
+    font-weight: bold;
+    /* color: #2c3e50; */
 }
 .tabs__control:hover{
     text-decoration:none;
     color:#8a9598;
+    color: #2c3e50;
 }
 .tabs__title_active_yes .tabs__control {
     /* color: #fff; */
     color: #8a9598;
+    color: #2c3e50;
 }
 .tabs__control::before {
     position: absolute;
@@ -1547,6 +1560,74 @@ p {
 .main__informer-table .main__quote-symbol_type_nikk225 {
     background-image: url('../img/nikk225_bg.png');
 }
+/* 全球监管 */
+.supervise_div{
+    padding-left:10px;
+}
+.supervise_div h3{
+    width: 100%;
+    font-weight: lighter;
+    font-size: 35px;
+    color: #343434;
+    text-align: center;
+    line-height: 67px;
+    height: 67px;
+    margin: 10px 0 30px;
+}
+.supervise li{
+    width: 274px;
+    height: 230px;
+    box-sizing: border-box;
+    border: 1px solid #dadada;
+    float: left;
+    margin-right: 64px;
+    margin-bottom: 38px;
+    background-color: #f2f2f2;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    box-sizing: border-box;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.supervise li.clearright{
+    margin-right:0;
+}
+.supervise li:hover{
+    background-color: #2583c2;
+    cursor: default;
+    border: 1px solid #2583c2;
+    box-shadow: 5px 5px 3px rgba(0,0,0,0.1);
+}
+.jg-logo {
+    height: 120px;
+    background-color: #fff;
+    text-align: center;
+}
+.jg-logo img{
+    width:auto;
+    height:100px;
+    margin:10px 0;
+}
+.jg-info {
+    padding: 10px 0 0 20px;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.jg-info h5 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.jg-info p {
+    font-size: 18px;
+    line-height: 27px;
+}
+.supervise li:hover .jg-info{
+    color:#fff;
+}
 /* 资金保障 */
 .parallax {
     background-attachment: fixed;
@@ -1561,6 +1642,7 @@ p {
     background-image: url('../img/found_protection.min_.jpg');
     /* min-height: 630px; */
     min-height:240px;
+    margin-bottom:40px;
 }
 .found_protection-box h1{
     text-align:center;
@@ -1884,6 +1966,7 @@ p {
     padding-left: 0;
     padding-right: 0;
     height: 338px;
+    color:#fff!important;
 }
 .killer_content .list1 {
     padding-bottom: 14px;
@@ -1899,7 +1982,8 @@ p {
     vertical-align: top;
     line-height: 34px;
     font-size: 24px;
-    color: #222;
+    /* color: #222; */
+    color:#fff;
     font-weight: 500;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1913,7 +1997,8 @@ p {
 .list2 .list2_1,.list3 .list3_1{
     font-size: 14px;
     line-height: 1.42857;
-    color: #222;
+    /* color: #222; */
+    color:#fff;
     float: left;
     padding-left: 10px;
     max-width: 150px;
@@ -1940,7 +2025,7 @@ p {
 .list2 .list2_2 .one{
     display: inline-block;
     padding: 9px;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     font-family: MicrosoftYaHei;
     font-size: 24px;
     line-height: 24px;
@@ -1968,6 +2053,7 @@ p {
     width: 53px;
     height: 53px;
     background: #000;
+    /* background:#fff; */
 }
 .list3_2 a img{
     position: absolute;
@@ -2053,6 +2139,10 @@ p {
     list-style-type: disc;
 }
 /* 金融市场分析 */
+.height58 .box__header{
+   height:58px;
+   line-height:58px;
+}
 .main__news-analytics {
     background: 0px 0 no-repeat;
 }
@@ -2144,7 +2234,10 @@ p {
 /* 金十数据 */
 .jin10_api{
     float:left;
-    width:470px;
+    width:478px;
+    position:absolute;
+    top:-58px;
+    right:0;
 }
 /* 分析评论 交易观点 */
 .main__analytics-reviews {
@@ -2518,7 +2611,7 @@ p {
     /* margin-top:20px; */
     margin:50px 0;
 }
-.slider__deposit {
+.slider__deposit{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -2528,14 +2621,18 @@ p {
     padding: 14px 10px 13px;
     width: 82px;
     border-radius: 6px;
-    background: -webkit-linear-gradient(#a5c44b,#688811);
+    /* background: -webkit-linear-gradient(#a5c44b,#688811);
     background: linear-gradient(#a5c44b,#688811);
-    background-color: #688811;
+    background-color: #688811; */
     box-shadow: 0 1px 2px #888;
     color: #fff;
     text-align: center;
     text-shadow: 0 -1px 0 #5b721b;
     line-height: 19px;
+    background: -webkit-linear-gradient(#da7711,#da4911);
+    background: linear-gradient(#da7711,#da4911);
+    background-color: #da4911;
+    text-shadow: 0 -1px 0 #da4911;
 }
 .slider__deposit:hover {
     background: -webkit-linear-gradient(#f6a72c,#c36709);
@@ -2901,6 +2998,11 @@ p {
     margin-bottom:12px;
     margin-top:12px;
     font-size:20px;
+}
+.col_box h5 a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c3e50;
 }
 .table_list{
     width:100%;
