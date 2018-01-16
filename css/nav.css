@@ -2,7 +2,8 @@
 .menu {
     position: relative;
     margin-bottom: 18px;
-    background: #7e9f2f repeat-x;
+    /* background: #7e9f2f repeat-x; */
+    background:#18182f repeat-x;
     color: #fff;
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 auto;

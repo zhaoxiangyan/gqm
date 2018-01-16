@@ -112,13 +112,16 @@
 .side-weix-anim {
     position: relative;
     width: 122px;
-    height: 235px;
+    height: 122px;
     padding-right: 5px;
     line-height: 0;
     text-align: right;
-    background: #fff url('../img/side-weix.png') no-repeat center;
-    border: solid #9BB6D4 1px;
+    background: #fff url('../img/wechat.jpg') no-repeat center;
+    background-size:120px 120px;
+    /* border: solid #9BB6D4 1px; */
+    border:solid #191935 1px;
     border-radius: 4px;
+    margin-left:100px!important;
 }
 .side-weix-anim .expert-fl-im {
     position: absolute;
@@ -153,14 +156,49 @@
     padding-right: 5px;
     line-height: 0;
     text-align: right;
+    height:140px;
+    overflow-y:hidden;
+    width:302px;
+}
+.side-weix span{
+    display:inline-block;
+    margin-right:5px;
+    width:94px;
+    text-align:center;
+}
+.side-weix span.marginright0{
+    margin-right:0;
+}
+.side-weix>a,.side-weix>span{
+    height:140px;
+    /* border: solid #9BB6D4 1px; */
+    border:solid #191935 1px;
+    border-radius: 4px;
+    background:#fff;
+    float:left;
+}
+.side-weix>a:hover{
+    background:#fff;
+    color:#191935;
 }
 .side-hoverout .side-down2-fon {
-    width: 96px;
+    width: 94px;
+    margin-left:5px;
 }
 .side-weix img {
-    border: solid #9BB6D4 1px;
-    border-radius: 4px;
     vertical-align:baseline;
+    width:92px;
+    height:92px;
+}
+.side-weix span img{
+    padding:7px;
+}
+.side-weix i{
+    font-size:13px;
+    font-style:normal;
+    color:#191935;
+    line-height:24px;
+    display:block;
 }
 .sidebar-box .side-i11 {
     width: 34px;

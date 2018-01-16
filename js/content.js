@@ -7,7 +7,7 @@ $(document).ready(function(){
     });
     // sidebar 飘窗hover
     $(".sidebar-box ul li").hover(function(){
-        $(this).children(".side-hoverout").animate({width:"202px"});
+        $(this).children(".side-hoverout").animate({width:"302px"});
     },function(){
         $(this).children(".side-hoverout").animate({width:"0px"});
     });
@@ -34,5 +34,22 @@ $(document).ready(function(){
     // setInterval(sscroll(document.getElementById('scrollobj')),10);
     $('.ea_plantform_min_list_mid_title').click(function(){
         $(".ea_plantform_min_list .ea_plantform_min_list_mid").eq($(this).index()).show().siblings().hide();
+    });
+    // 视频播放器播放视频
+    // 点击视频目录,弹出播放器
+    $(".image__text a").click(function(){
+        var videosrc = $(this).data("src");
+        if(typeof(videosrc) == "string"){
+        $("video").attr("src",videosrc);
+        $("video").trigger('play');
+        $("#video_bg").show();
+        $("html").css("overflow","hidden");
+        }
+    });
+    //  关闭播放器按钮
+    $(".video button").click(function(){
+        $("video").trigger('pause');
+        $("#video_bg").hide();
+        $("html").css("overflow","auto");
     });
 }); 

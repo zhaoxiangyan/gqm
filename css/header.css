@@ -1,5 +1,5 @@
 html {
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
@@ -19,7 +19,8 @@ html {
 }
 html, button, input, textarea, select {
     color: #464b4a;
-    font: 12px/18px Helvetica,Arial,sans-serif;
+    font-size:12px/18px;
+    /* font: 12px/18px Helvetica,Arial,sans-serif; */
     -webkit-font-smoothing: antialiased;
 }
 .page {
@@ -31,7 +32,8 @@ html, button, input, textarea, select {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    overflow: auto;
+    /* overflow: auto; */
+    overflow:hidden;
     min-width: 1000px;
     min-height: 100%;
     background: #fff;
@@ -41,7 +43,7 @@ html, button, input, textarea, select {
     -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
-    font-family: Arial,'Microsoft YaHei','黑体','微软雅黑','宋体',sans-serif;
+    /* font-family: Arial,'Microsoft YaHei','黑体','微软雅黑','宋体',sans-serif; */
     position: relative !important;
     direction: ltr;
 }

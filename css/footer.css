@@ -3,8 +3,9 @@
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    font: 12px/18px Helvetica,Arial,sans-serif;
-    font-family: Arial,'Microsoft YaHei','黑体','微软雅黑','宋体',sans-serif;
+    font-size:12px/18px;
+    /* font: 12px/18px Helvetica,Arial,sans-serif; */
+    /* font-family: Arial,'Microsoft YaHei','黑体','微软雅黑','宋体',sans-serif; */
 }
 .footer__row {
     position: relative;
@@ -139,10 +140,12 @@
     background: 100% 50% no-repeat;
 }
 .link_type_pdf, .link[href$='.pdf'] {
-    background-image: url('../img/pdf_icon.svg');
+    /* background-image: url('../img/pdf_icon.svg'); */
+    background-image: url('../img/pdf_icon_hover.svg');
 }
 .link_type_pdf.link_color_gray, .link_color_gray[href$='.pdf'] {
-    background-image: url('../img/pdf_icon.svg');
+    /* background-image: url('../img/pdf_icon.svg'); */
+    background-image: url('../img/pdf_icon_hover.svg');
 }
 .link_type_pdf.link_color_gray:hover, .link_type_pdf.link_color_gray.link_hover_yes, .link_color_gray[href$='.pdf']:hover, .link_color_gray[href$='.pdf'].link_hover_yes {
     background-image: url('../img/pdf_icon_hover.svg');
