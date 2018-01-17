@@ -26,9 +26,6 @@ $(document).ready(function(){
         if (obj.scrollLeft == tmp) { 
         obj.innerHTML += obj.innerHTML; 
         } 
-        // if (obj.scrollLeft >= obj.firstChild.offsetHeight) { 
-        // obj.scrollLeft = 0; 
-        // } 
     };
     setInterval(()=>{sscroll(document.getElementById('scrollobj'))}, 10);
     // setInterval(sscroll(document.getElementById('scrollobj')),10);
@@ -37,7 +34,7 @@ $(document).ready(function(){
     });
     // 视频播放器播放视频
     // 点击视频目录,弹出播放器
-    $(".image__text a").click(function(){
+    $(".video__div a").click(function(){
         var videosrc = $(this).data("src");
         if(typeof(videosrc) == "string"){
         $("video").attr("src",videosrc);
@@ -52,4 +49,13 @@ $(document).ready(function(){
         $("#video_bg").hide();
         $("html").css("overflow","auto");
     });
+    // 明星投资者轮播
+    var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+        // 如果需要分页器
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        autoplay:true
+    })
 }); 

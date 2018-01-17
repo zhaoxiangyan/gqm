@@ -13,4 +13,10 @@ $(document).ready(function(){
         $(this).find(".ea_product_min_goods_before").slideDown();
         $(this).find(".ea_product_min_goods_after").slideUp();
     });
+    // 智远圈hover
+    $(".video__div").hover(function(){
+        $(this).find(".mask").slideDown('fast');
+    },function(){
+        $(this).find(".mask").hide();
+    });
 }); 

@@ -1257,20 +1257,14 @@ p {
 .list_space_18>li {
     margin-bottom: 18px;
 }
-.main__news-list li {
-    position: relative;
-    overflow: hidden;
-    max-height: 36px;
-    white-space: nowrap;
-}
 .main__news-props {
     position: relative;
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 .main__news-list li {
     position: relative;
     overflow: hidden;
-    max-height: 36px;
+    max-height: 41px;
     white-space: nowrap;
 }
 .main__news-date {
@@ -1300,7 +1294,7 @@ p {
     background-color: #bbb;
     content: '';
 }
-.main__news-list a::after {
+/* .main__news-list a::after {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -1309,7 +1303,7 @@ p {
     background: -webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1));
     background: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1));
     content: '';
-}
+} */
 
 
 .box__footer {
@@ -1372,8 +1366,8 @@ p {
     text-align:center;
 }
 .box__mood img{
-    width:350px;
-    height:500px;
+    width:354px;
+    height:504px;
 }
 /* 货币对 指数 */
 .main__tabs-informer .tabs__body {
@@ -1442,7 +1436,11 @@ p {
     border-right: 1px solid #d0d1d1;
     background: #fff;
     /* line-height: 24px; */
-    line-height:17px;
+    /* line-height:17px; */
+    line-height:38px;
+}
+.table.lineheight65 td {
+    line-height:54px;
 }
 .table.two td{
     line-height:38px;
@@ -1531,6 +1529,10 @@ p {
 }
 .main__quote_arrow_up {
     background-image: url('../img/arrow_up_bg.svg');
+    background-position:right 10px top 20px;
+}
+.lineheight65 .main__quote_arrow_up{
+    background-position:right 10px top 28px;
 }
 .table td.main__quote-ask-container {
     padding: 0 10px 0 1px;
@@ -1538,6 +1540,36 @@ p {
 .table_bordered_horisont tr td:last-child {
     padding-right: 9px;
     /* border-right: 1px solid #d0d1d1; */
+}
+.table td a.button__{
+    /* position: relative; */
+    display: inline-block;
+    /* -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; */
+    /* margin: -3px 0; */
+    padding: 0 10px;
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+    background: -webkit-linear-gradient(#da7711,#da4911);
+    background: linear-gradient(#da7711,#da4911);
+    background-color: #da4911;
+    color: #fff;
+    /* vertical-align: top; */
+    text-align: center;
+    text-shadow: 0 -1px 0 #da4911;
+    cursor: pointer;
+    -webkit-appearance: none;
+    height:38px;
+    line-height:38px;
+}
+.table td a.button__:hover{
+    background: -webkit-linear-gradient(#f7a82d,#c36709);
+    background: linear-gradient(#f7a82d,#c36709);
+    background-color: #c36709;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #b05912;
 }
 .main__informer-table .main__quote-symbol_type_gbpusd {
     background-image: url('../img/gbpusd_bg.png');
@@ -2187,10 +2219,25 @@ p {
 .ea_plantform_min_list_mid img {
     float: left;
     margin-left: 50px;
+    /* width:280px; */
+    height:240px;
+    margin-top:23px;
+}
+.ea_plantform_min_list_mid1 img{
+    
+}
+.ea_plantform_min_list_mid2 img{
+    margin-left:113px;
+}
+.ea_plantform_min_list_mid3 img{
+    margin-left:102px;
+}
+.ea_plantform_min_list_mid4 img{
+    margin-left:154px;
 }
 .ea_plantform_min_list_mid ul {
     float: right;
-    width: 500px;
+    width: 470px;
 }
 .ea_plantform_min_list_mid ul li {
     font-size: 18px;
@@ -2246,11 +2293,18 @@ p {
     clear: both;
 }
 /* GQM优惠活动 */
+.grid__col_w_270{
+    width:260px;
+}
+.grid__col_w_680{
+    width:680px;
+}
 .box_activity{
     position: relative;
     float: left;
-    width: 270px;
-    height: 288px;
+    /* width: 270px; */
+    width:100%;
+    /* height: 288px; */
 }
 /* 距离新闻发布 */
 .main__news-informer {
@@ -2335,13 +2389,13 @@ p {
 .jin10_api{
     float:left;
     width:678px;
-    height:331px;
-    position:absolute;
-    top:-43px;
-    right:0;
+    height:356px;
+    /* position:absolute; */
+    /* top:-43px; */
+    /* right:0; */
     overflow-y:auto;
     padding-right:16px;
-    border-left:1px solid #5a9df7;
+    /* border-left:1px solid #5a9df7; */
 }
 /* 分析评论 交易观点 */
 .main__analytics-reviews {
@@ -2624,6 +2678,78 @@ p {
     text-decoration:none;
     color:#fff;
     background-color: #365276;
+}
+/* 智远圈视频 */
+.gq_video{
+
+}
+.gq_video a.learn__more{
+    float:right;
+    font-size:12px;
+    line-height:50px;
+    margin-right:10px;
+    color:#db4713;
+}
+.box__video ul{}
+.box__video ul li{
+    float:left;
+    width:33.3333%;
+    padding:0 10px;
+    margin:20px 0;
+}
+.video__div{
+    position:relative;
+    height:100%;
+}
+.video__div img{
+    width:100%;
+}
+.video__div h3{
+    padding:15px;
+    background:#eaeaea;
+    font-size:16px;
+    line-height:24px;
+    height:54px;
+    color:#222;
+    overflow:hidden;
+}
+.video__div .mask{
+    background:#0093e8;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:20px;
+    color:#fff;
+    display:none;
+}
+.video__div .mask p{
+    height:95px;
+    font-size:14px;
+    line-height:25px;
+    overflow:hidden;
+    word-wrap:break-word;
+}
+.video__div .mask div{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+}
+.video__div .mask a{
+    float:right;
+    color:#db4713;
+    line-height:42px;
+}
+.video__div .mask h3{
+    font-size: 16px;
+    line-height: 42px;
+    background:#0093e8;
+    padding:0;
+    color:#fff;
+    height:42px;
 }
 /* 开立账户 */
 .open_account{
@@ -3213,4 +3339,18 @@ video {
     background: none;
     font-size: 25px;
     color: #fff;
+}
+/* 明星投资者 */
+.star_people{
+    padding-left:10px;
+}
+.star_people .swiper-slide{
+    /* border:1px solid #9e9e9e; */
+    border:1px solid #e7eced;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+}
+.star_people .swiper-slide img{
+    width:100%;
 }
