@@ -20,7 +20,7 @@ $(function(){
     function autoplay() {
         timer = setInterval(function() {
             index++;
-            if (index > 3) {
+            if (index > 4) {
                 index = 0;
             }
             $(".promoblock__items li").eq(index).addClass("promoblock__item_active_yes").siblings().removeClass("promoblock__item_active_yes");
@@ -30,5 +30,36 @@ $(function(){
             }, 500);
             $(".promoblock__items li").eq(index).siblings().css('opacity', 0);
         }, 2000);
-    }
+    };
+
+
+    // 滚动交易数量
+    var sum = 12345678913;
+    $(function() {
+        setInterval(function(){
+            show_num1(sum)
+        },2000);
+    });
+    function show_num1(n) {
+        sum=sum+Math.round(Math.random()*1000);
+        console.log(n);
+        var it = $(".number__box span:not(.comma)");
+        var len = String(n).length;
+        for(var i = 0; i < len; i++) {
+            // if(it.length <= i) {
+            //     $(".real_account .number__box").append("<span></span>");
+            // }
+            var num = String(n).charAt(i);
+            //根据数字图片的高度设置相应的值
+            var y = -parseInt(num) * 58;
+            var obj = $(".number__box span:not(.comma)").eq(i);
+            obj.animate({
+                // backgroundPosition: '(0 ' + String(y) + 'px)'
+                "backgroundPositionX":"0px",
+                "backgroundPositionY":String(y)+'px'
+            }, 'slow', 'swing');
+        }
+        // $("#cur_num").val(n);
+        // console.log(n+'后');
+    };
 });

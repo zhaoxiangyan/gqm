@@ -273,8 +273,8 @@ p {
 .promoblock__controls {
     position: absolute;
     left:50%;
-    margin-left:-124px;
-    bottom: 100px;
+    margin-left:-155px;
+    bottom: 45px;
     z-index: 3;
     /* padding: 4px 5px 3px; */
     /* border-radius: 6px; */
@@ -313,9 +313,9 @@ p {
 }
 /* 5  21 2  1 */
 .home_slider_bottom {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    /* position: absolute; */
+    /* left: 0; */
+    /* bottom: 0; */
     /* background: rgba(25,25,55,0.6);*/
     /* background:rgba(171,60,23,0.7); */
     background:#e84700;
@@ -488,7 +488,7 @@ p {
     color: #2c3e50;
     height: 50px;
     line-height: 50px;
-    padding-left: 30px;
+    padding-left: 10px;
     border-bottom: 1px solid #e7eced;
 }
 .box__header {
@@ -1028,6 +1028,8 @@ p {
 }
 .s_mb_0 {
     margin-bottom: 0;
+    line-height:1;
+    height:20px;
 }
 .s_ml_10 {
     margin-left: 10px;
@@ -1366,8 +1368,8 @@ p {
     text-align:center;
 }
 .box__mood img{
-    width:354px;
-    height:504px;
+    width:372px;
+    height:531px;
 }
 /* 货币对 指数 */
 .main__tabs-informer .tabs__body {
@@ -1543,12 +1545,12 @@ p {
 }
 .table td a.button__{
     /* position: relative; */
-    display: inline-block;
+    display:block;
     /* -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; */
     /* margin: -3px 0; */
-    padding: 0 10px;
+    /* padding: 0 10px; */
     outline: 0;
     border: 0;
     border-radius: 6px;
@@ -1561,8 +1563,8 @@ p {
     text-shadow: 0 -1px 0 #da4911;
     cursor: pointer;
     -webkit-appearance: none;
-    height:38px;
-    line-height:38px;
+    /* height:38px; */
+    /* line-height:38px; */
 }
 .table td a.button__:hover{
     background: -webkit-linear-gradient(#f7a82d,#c36709);
@@ -1616,6 +1618,12 @@ p {
 .main__informer-table .main__quote-symbol_type_nikk225 {
     background-image: url('../img/nikk225_bg.png');
 }
+/* 提示 */
+.tips{
+    text-align:center;
+    margin:5px 0 27px;
+    color:#939393;
+}
 /* 全球监管 */
 .supervise_div{
     padding-left:10px;
@@ -1632,7 +1640,7 @@ p {
 }
 .supervise li{
     width: 274px;
-    height: 257px;
+    height: 230px;
     box-sizing: border-box;
     border: 1px solid #dadada;
     float: left;
@@ -1651,9 +1659,9 @@ p {
     margin-right:0;
 }
 .supervise li:hover{
-    background-color: #2583c2;
+    background-color: #e84700;
     cursor: default;
-    border: 1px solid #2583c2;
+    border: 1px solid #e84700;
     box-shadow: 5px 5px 3px rgba(0,0,0,0.1);
 }
 .jg-logo {
@@ -1681,7 +1689,7 @@ p {
     margin-bottom: 8px;
 }
 .jg-info p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 27px;
     margin:0;
 }
@@ -1830,6 +1838,36 @@ p {
     border: solid 1px transparent !important;
     text-shadow: 1px 1px 1px #616161;
 }
+/* 真实账户交易数量 */
+.real_account{
+    padding-left:10px;
+}
+.real_account .number__box{
+    display:inline-block;    
+    float:left;
+}
+.real_account div span{
+    width:33px;
+    height:47px;
+    display:inline-block;
+    background:url('../img/number2.png') no-repeat;
+    background-position:0 0;
+}
+.real_account div span.comma{
+    background-position:0px -580px;
+}
+.real_account div.descr{
+    color: #939393;
+    float: left;
+    margin-top: 3px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 1px solid #e1e1e1;
+    font-size: 20px;
+    letter-spacing: -1px;
+    margin-left: 30px;
+}
 /* 收集积分 */
 .grid__col_w_24 {
     width: 950px;
@@ -1948,7 +1986,7 @@ p {
     color: #2c3e50;
     height: 50px;
     line-height: 50px;
-    padding-left: 30px;
+    padding-left: 21px;
     border-bottom: 1px solid #e7eced;
 }
 .killer_header{
@@ -2176,7 +2214,7 @@ p {
     text-align: center;
     line-height: 67px;
     height: 67px;
-    margin: 100px 0 30px;
+    margin: 60px 0 20px;
 }
 .platform_div>ul{
     clear: both;
@@ -2227,13 +2265,13 @@ p {
     
 }
 .ea_plantform_min_list_mid2 img{
-    margin-left:113px;
+    margin-left:129px;
 }
 .ea_plantform_min_list_mid3 img{
-    margin-left:102px;
+    margin-left:129px;
 }
 .ea_plantform_min_list_mid4 img{
-    margin-left:154px;
+    margin-left:129px;
 }
 .ea_plantform_min_list_mid ul {
     float: right;
@@ -2274,6 +2312,15 @@ p {
    /* line-height:58px; */
    height:43px;
    line-height:43px;
+   /* padding:0; */
+   /* text-align:center; */
+}
+.height58 a.learn__more{
+    float:right;
+    font-size:12px;
+    line-height:43px;
+    margin-right:10px;
+    color:#db4713;
 }
 .main__news-analytics {
     background: 0px 0 no-repeat;
@@ -2292,7 +2339,7 @@ p {
 .s_clearfix_yes:after {
     clear: both;
 }
-/* GQM优惠活动 */
+/* GQFX优惠活动 */
 .grid__col_w_270{
     width:260px;
 }
@@ -2683,12 +2730,16 @@ p {
 .gq_video{
 
 }
-.gq_video a.learn__more{
+.killer_row a.learn__more,.gq_video a.learn__more{
     float:right;
     font-size:12px;
     line-height:50px;
     margin-right:10px;
     color:#db4713;
+}
+.box__video>p{
+    text-align:right;
+    padding:0 10px;
 }
 .box__video ul{}
 .box__video ul li{
@@ -2700,6 +2751,12 @@ p {
 .video__div{
     position:relative;
     height:100%;
+}
+.video__div>a{
+    display:block;
+}
+.video__div>a:hover{
+    text-decoration:none;
 }
 .video__div img{
     width:100%;
