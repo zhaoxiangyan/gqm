@@ -147,11 +147,14 @@
 }
 .menu__item_hover_yes .menu__sub {
     display: -webkit-flex;
+    display: -webkit-box;
     display: -ms-flexbox;
+    display: -moz-box;
     display: flex;
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    display:block\0;/* ie 8/9*/
 }
 .menu__sub::before {
     position: absolute;

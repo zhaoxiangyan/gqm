@@ -51,15 +51,14 @@ $(function(){
             // }
             var num = String(n).charAt(i);
             //根据数字图片的高度设置相应的值
-            var y = -parseInt(num) * 58;
+            var y = -parseInt(num) * 50;
             var obj = $(".number__box span:not(.comma)").eq(i);
             obj.animate({
-                // backgroundPosition: '(0 ' + String(y) + 'px)'
+                // backgroundPosition: '(0px ' + String(y) + 'px)'
                 "backgroundPositionX":"0px",
                 "backgroundPositionY":String(y)+'px'
             }, 'slow', 'swing');
         }
-        // $("#cur_num").val(n);
         // console.log(n+'后');
     };
 });

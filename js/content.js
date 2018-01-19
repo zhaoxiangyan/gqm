@@ -20,15 +20,17 @@ $(document).ready(function(){
         }
     });
     // 流动性合作伙伴
-    function sscroll(obj){
+    function sscroll(){
         /*往左*/ 
+        var obj = document.getElementById('scrollobj');
         var tmp = (obj.scrollLeft)++; 
         if (obj.scrollLeft == tmp) { 
         obj.innerHTML += obj.innerHTML; 
         } 
     };
-    setInterval(()=>{sscroll(document.getElementById('scrollobj'))}, 10);
-    // setInterval(sscroll(document.getElementById('scrollobj')),10);
+    // var scrobj = document.getElementById('scrollobj');
+    // setInterval(()=>{sscroll(document.getElementById('scrollobj'))}, 10);
+    setInterval(sscroll,10);
     $('.ea_plantform_min_list_mid_title').click(function(){
         $(".ea_plantform_min_list .ea_plantform_min_list_mid").eq($(this).index()).show().siblings().hide();
     });

@@ -1,6 +1,6 @@
 /**
  * 数字滚动js
- * @param {Object} $
+//  @ param {Object} $
  */
 (function($) {
 if(!document.defaultView || !document.defaultView.getComputedStyle){
