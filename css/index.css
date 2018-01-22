@@ -3141,33 +3141,6 @@ p {
     background-image: url('../img/type_deposit_bg.png');
 }
 /* 开设账户 下载平台 入金并交易 */
-/* 返回顶部 */
-.page__action-buttons {
-    position: fixed;
-    right: 0;
-    bottom: 27px;
-    z-index: 100;
-    padding-right: 30px;
-}
-.page__back-to-top {
-    display: block;
-    overflow: hidden;
-    width: 45px;
-    height: 45px;
-    background: 0 0 no-repeat;
-    text-indent: -1000%;
-    opacity: 0;
-    white-space: nowrap;
-    transition: opacity .7s ease;
-    pointer-events: none;
-}
-.page__back-to-top_active_yes {
-    opacity: 1;
-    pointer-events: auto;
-}
-.page__back-to-top {
-    background-image: url('../img/top_icon.svg');
-}
 /* 五大交易亮点 */
 .five_advantage{
     padding-left:10px;
@@ -3218,6 +3191,7 @@ p {
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.7);
+    /* filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF000000,endColorstr=#FF000000); */
     color: #fff;
     display: none;
 }
@@ -3455,13 +3429,40 @@ video {
 .star_people{
     padding-left:10px;
 }
-.star_people .swiper-slide{
-    /* border:1px solid #9e9e9e; */
-    border:1px solid #e7eced;
+#box1{
+    overflow:hidden;
+    
+}
+#list1{
+    position:relative;
+}
+#list1 li{
+    float:left;
+}
+#list1 li img{
+    box-sizing:border-box;
+    border: 1px solid #e7eced;
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
 }
-.star_people .swiper-slide img{
-    width:100%;
+#box1 ol{
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+}
+#box1 ol li{
+    cursor: pointer;
+    position: relative;
+    margin-left: 15px;
+    display: inline;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: gainsboro;
+    float:left;
+}
+#box1 ol li.action{
+    background-color: #e84700;
 }

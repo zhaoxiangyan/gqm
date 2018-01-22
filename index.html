@@ -9,13 +9,13 @@
 	<meta name="keywords" content="GQFX官方网站">
 	<meta name="viewport" content="width=1000">
 	<meta name="format-detection" content="telephone=no">
+	<link href="img/gqfx_favicon.ico" rel="shortcut icon" type="image/x-icon" />	
 	<link rel="stylesheet" href="css/clear.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/nav.css">
-	<link rel="stylesheet" href="css/div_content.css">
+	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/sidebar.css">
-	<link rel="stylesheet" href="css/swiper.min.css">
 </head>
 <body class="page">
 <header id="header" class="header">
@@ -55,7 +55,7 @@
 		</div>
 	</div>
 	<div class="header_content">
-		<img class="header__logo-ball" src="img/gqfx_logo_mini.png" alt="">
+		<a href="index.html"><img class="header__logo-ball" src="img/gqfx_logo_mini.png" alt=""></a>
 		<!-- <a class="header__birthday "  href="#">载誉十八年，诚信铸辉煌！</a> -->
 		<ul class="header__action-list">
 			<li	class="header__action-item">
@@ -83,7 +83,7 @@
 			</div>
 			<div class="menu__sub menu__sub_cols_4">
 				<ul class="menu__sub-col">
-					<li class="menu__sub-item"><a class="" href="#">智远集团GQFX</a></li>
+					<li class="menu__sub-item"><a class="" href="About/gqfx.html">智远集团GQFX</a></li>
 				</ul>
 				<ul class="menu__sub-col menu__sub-colbefore">
 					<li class="menu__sub-item"><a class="" href="#">牌照和监管</a></li>
@@ -1318,16 +1318,14 @@
 				</div>
 			</div> 
 		</div>
-		<!-- 轮播 明星投资者 -->
+		<!-- 轮播 明星交易者  兼容轮播 -->
 		<div class="grid__row s_mb_27 star_people">
-			<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="img/star_people1.jpg"></div>
-						<div class="swiper-slide"><img src="img/star_people2.jpg"></div>
-					</div>
-					<!-- 如果需要分页器 -->
-					<div class="swiper-pagination"></div>
-			</div>
+			<div class="box1" id="box1">
+				<ul id="list1" class="list clearfix">
+					<li class="li"><img src="img/star_people1.jpg" alt=""></li>
+					<li class="li"><img src="img/star_people2.jpg" alt=""></li>
+				</ul>
+			</div>		
 		</div>
   </div>
   <div class="grid__container">
@@ -2001,10 +1999,10 @@
 	</div>
 </div>	
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-<scirpt type="text/javascript" src="js/digitalScroll.js"></scirpt>
+<!-- <scirpt type="text/javascript" src="js/digitalScroll.js"></scirpt> -->
 <script type="text/javascript" src="js/nav.js"></script>
-<script type="text/javascript" src="js/page.js"></script>
-<script type="text/javascript" src="js/content.js"></script>
-<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/index1.js"></script>
+<script type="text/javascript" src="js/index2.js"></script>
+<script type="text/javascript" src="js/swiperdemo.js"></script>
 </body>
 </html>

@@ -5,18 +5,18 @@ $(document).ready(function(){
     },function(){
         $(this).removeClass('menu__item_hover_yes');
     });
-    // 五大交易亮点hover
-    $(".ea_product_min_goods_part").hover(function(){
-        $(this).find(".ea_product_min_goods_before").slideUp();
-        $(this).find(".ea_product_min_goods_after").slideDown();
+    // sidebar 飘窗hover
+    $(".sidebar-box ul li").hover(function(){
+        $(this).children(".side-hoverout").animate({width:"302px"});
     },function(){
-        $(this).find(".ea_product_min_goods_before").slideDown();
-        $(this).find(".ea_product_min_goods_after").slideUp();
+        $(this).children(".side-hoverout").animate({width:"0px"});
     });
-    // 智远圈hover
-    // $(".video__div").hover(function(){
-    //     $(this).find(".mask").slideDown('fast');
-    // },function(){
-    //     $(this).find(".mask").hide();
-    // });
+    // 返回顶部
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >350) {
+            $(".page__back-to-top").addClass('page__back-to-top_active_yes');
+        }else{
+            $(".page__back-to-top").removeClass('page__back-to-top_active_yes');
+        }
+    });
 }); 

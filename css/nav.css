@@ -13,7 +13,7 @@
 .menu{
     margin-bottom: 0px;
 }
-.menu:after {
+/* .menu:after {
     position: absolute;
     top: 100%;
     right: 0;
@@ -21,7 +21,7 @@
     height: 9px;
     background: repeat-x 0 -63px;
     content: '';
-}
+} */
 .menu, .menu:after {
     background-image: url('../img/menu_bg1.png');
     /* border-bottom:1px solid #2257a7; */
@@ -251,4 +251,31 @@
 .menu__sub-checked-by-auditor a {
     display: inline-block;
     padding-left: 27px;
+}
+/* 返回顶部 */
+.page__action-buttons {
+    position: fixed;
+    right: 0;
+    bottom: 27px;
+    z-index: 100;
+    padding-right: 30px;
+}
+.page__back-to-top {
+    display: block;
+    overflow: hidden;
+    width: 45px;
+    height: 45px;
+    background: 0 0 no-repeat;
+    text-indent: -1000%;
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity .7s ease;
+    pointer-events: none;
+}
+.page__back-to-top_active_yes {
+    opacity: 1;
+    pointer-events: auto;
+}
+.page__back-to-top {
+    background-image: url('../img/top_icon.svg');
 }
