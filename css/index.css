@@ -3049,14 +3049,15 @@ p {
     vertical-align: middle;
 }
 .slider__link{
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
+    cursor:default;
 }
-.slider__link:hover{
+/* .slider__link:hover{
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
     text-decoration:none;
-}
+} */
 /* 为什么选择 */
 .text_div>h2{
     margin: 0 0 18px;

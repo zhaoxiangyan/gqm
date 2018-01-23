@@ -48,7 +48,7 @@
 .menu__itembefore:before {
     background-image: url('../img/menu_item_before_bg1.png');
 }
-.menu__item:after {
+/* .menu__item:after {
     position: absolute;
     top: 100%;
     right: 0;
@@ -57,7 +57,7 @@
     height: 9px;
     background: rgba(22,26,17,.9);
     pointer-events: none;
-}
+} */
 /* 主目录 */
 .menu__item_active_yes:after, .menu__item_active_yes .menu__btn:before, .menu__item_active_yes .menu__btn:after, .menu__item_active_yes .menu__deco:before, .menu__item_active_yes .menu__deco:after, .menu__item_hover_yes:after, .menu__item_hover_yes .menu__btn:before, .menu__item_hover_yes .menu__btn:after, .menu__item_hover_yes .menu__deco:before, .menu__item_hover_yes .menu__deco:after {
     content: '';
@@ -138,7 +138,8 @@
     left: 50%;
     z-index: 400;
     display: none;
-    margin: 9px 0 0 -486px;
+    /* margin: 9px 0 0 -486px; */
+    margin-left:-486px;
     width: 972px;
     border-radius: 0 0 6px 6px;
     background: rgba(22,26,17,.9);
@@ -156,7 +157,7 @@
     flex-wrap: wrap;
     display:block\0;/* ie 8/9*/
 }
-.menu__sub::before {
+/* .menu__sub::before {
     position: absolute;
     top: -9px;
     right: 0;
@@ -164,7 +165,7 @@
     height: 9px;
     background: transparent;
     content: '';
-}
+} */
 .menu__sub-col {
     position: relative;
     float: left;
