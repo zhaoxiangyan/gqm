@@ -47,7 +47,7 @@
 }
 .title p{
     font-size:18px;
-    line-height:20px;
+    line-height:34px;
 }
 
 
@@ -80,4 +80,34 @@ ul.content__div{}
 }
 .content__div li img{
     max-width:440px;
+}
+/* 牌照和监管 */
+.content__div ul.license__list{
+    padding-left:20px;
+}
+.content__div ul.license__list li{
+    margin:0;
+    list-style:disc;
+    line-height:20px;
+    margin-bottom:4px;
+}
+/* 资金安全保障 */
+.security_title{
+    font-size:36px;
+    color:#000;
+    margin:50px 0;
+    text-align:center;
+}
+.security_list{
+    color:#db4713;
+    font-size:14px;
+}
+.security_list li{
+    background:url('../img/li_disc.png') 4px 6px no-repeat;
+    text-indent:18px;
+    margin-bottom:27px;
+}
+.security_list li p{
+    text-indent:0;
+    margin-top:8px;
 }

@@ -1,0 +1,191 @@
+.page__main{}
+.banner{
+
+}
+.banner img{
+   width:100%;
+   height:543px;
+}
+@media screen and (max-width: 1880px){
+    .banner img {
+        position: relative;
+        width: 1880px;
+        left: 50%;
+        margin-left: -920px;
+    }
+}
+.auto950{
+    margin:0 auto;
+    width:950px;
+}
+.content_box{
+    padding:60px 0;
+}
+.content_box p{
+    color:#434242;
+}
+.content_box div.title{
+    margin-bottom:50px;
+}
+.title div.content__link{
+
+}
+.content__link span{
+    font-size:14px;
+    color:#db4713;
+    line-height:16px;
+}
+.content__link span a{
+    color:#434242;
+}
+.title h3{
+    font-weight:normal;
+    font-size:30px;
+    line-height:30px;
+    margin:40px 0 20px;
+    color:#db4713;
+}
+.title p{
+    font-size:18px;
+    line-height:34px;
+}
+
+
+.deposit__list{}
+.deposit__list li{
+    border:1px solid #bfbfbf;
+    border-radius:1px;
+    margin-bottom:40px;
+    padding:20px;
+    zoom:1;
+}
+.deposit__list li:after{
+    content: ".";
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.deposit__list li>div{
+    float:left;
+}
+.deposit__list li div span.li_title{
+    display:block;
+    color:#db4713;
+    font-size:18px;
+    margin-bottom:25px;
+}
+.deposit__list li div a{
+    display:block;
+    height:22px;
+    position:relative;
+    background:url('../img/deposit_button_bg.png') repeat;
+    border-radius:3px;
+}
+.deposit__list li div a:hover{
+    text-decoration:none;
+}
+.deposit__list li div a p{
+    min-width:200px;
+    padding-left:10px;
+    padding-right:26px;
+    font-size:12px;
+    line-height:22px;
+    color:#fff;
+    letter-spacing:1px;
+}
+.deposit__list li div a span{
+    display:inline-block;
+    width:15px;
+    height:15px;
+    font-weight:bold;
+    line-height:15px;
+    text-align:center;
+    color:#000;
+    background:#fff;
+    border-radius:50%;
+    position:absolute;
+    right:7px;
+    top:3px;
+}
+.deposit__list li img{
+    float:right;
+    /* height:79px; */
+}
+p.attention{
+    font-size:18px;
+    color:#4e4e4e;
+    margin-bottom:10px;
+    letter-spacing:2px;
+}
+p.attention_text{
+    font-size:18px;
+    color:#4e4e4e;
+    letter-spacing:2px;
+}
+.text__list{
+    letter-spacing:2px;
+    font-size:18px;
+    color:#4e4e4e;
+    list-style:disc;
+    padding-left:20px;
+}
+
+/* 出金页面 */
+.withdrawal_button{
+    display:inline-block;
+    width:156px;
+    height:40px;
+    border-radius:3px;
+    background:url('../img/deposit_button_bg.png') repeat-x;
+    background-size:1px 40px;
+    position:relative;
+    font-size:18px;
+    color:#fff;
+    line-height:40px;
+    padding:0 9px;
+    letter-spacing:2px;
+    margin-top:35px;
+}
+.withdrawal_button p{}
+.withdrawal_button span{
+    display:inline-block;
+    position:absolute;
+    color:#000;
+    background:#fff;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    font-size:30px;
+    line-height:20px;
+    text-align:center;
+    font-weight:bold;
+    top:8px;
+    right:9px;
+}
+/* 账户间转账页面 */
+.transfer_table{
+    border:1px solid #bfbfbf;
+    text-align:center;
+    width:827px;
+    height:115px;
+}
+.transfer_table tr th{
+    background:#999999;
+    color:#fff;
+    font-size:18px;
+    font-weight:normal;
+    border-left:1px solid #7d7c7c;
+}
+.transfer_table tr td{
+    background:#eae9e9;
+    color:#000;
+    font-size:18px;
+    border-left:1px solid #7d7c7c;
+}
+.transfer_table tr .one{
+    width:230px;
+    border:none;
+}
