@@ -189,3 +189,103 @@ p.attention_text{
     width:230px;
     border:none;
 }
+/* 常见问题（出入金） */
+.deposit_problem_list{
+   width:700px;
+}
+.deposit_problem_list li{
+    border-bottom:1px solid #d1d1d1;
+}
+.deposit_problem_list li p.problem_title{
+    display:inline-block;
+    cursor:pointer;
+    line-height:48px;
+}
+.deposit_problem_list li p.problem_title.active{
+    color:#db4713;
+}
+.deposit_problem_list li p.problem_title:hover{
+    color:#db4713;
+}
+.deposit_problem_list li p.problem_answer{
+    display:none;
+    padding-left:10px;
+}
+/* 常用词汇表 */
+.letter_div{
+    display:inline-block;
+    margin-top:40px;
+}
+.letter_div a{
+    display:inline-block;
+    width:35px;
+    height:27px;
+    font-size:14px;
+    line-height:27px;
+    text-align:center;
+    background:#22261d;
+    border-right:1px solid #38432d;
+    color:#fff;
+}
+.letter_div a:hover{
+    color:#767658;
+    text-decoration:none;
+}
+.letter_div a:first-child{
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px;
+}
+.letter_div a:last-child{
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+}
+.letter_content_div{
+    width:910px;
+}
+.letter_content_div h2{
+    font-size:20px;
+    border-bottom:1px solid #e3e3e3;
+    line-height:38px;
+    margin:25px 0 20px;
+    float:left;
+    width:100%;
+}
+.letter_content_div div{
+    width:50%;
+    padding-right:30px;
+    float:left;
+}
+.letter_content_div div span{
+    display:block;
+    margin:4px 0;
+}
+.letter_content_div div span a{
+    font-size:16px;
+    /* color:#000; */
+}
+.letter_content_div div span a.active{
+    color:#db4713;
+}
+.letter_content_div div span a:hover{
+    color:#db4713;
+    text-decoration:none;
+}
+.letter_content_div div p{
+    font-size:14px;
+    color:#777;
+    line-height:20px;
+    display:none;
+    text-align:justify;
+}
+/* 财经日历 */
+p.calendar_attention {
+    font-size: 14px;
+    color: #4e4e4e;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+p.calendar_attention_text {
+    font-size: 15px;
+    color: #4e4e4e;
+    letter-spacing: 2px;
+}

@@ -19,4 +19,18 @@ $(document).ready(function(){
             $(".page__back-to-top").removeClass('page__back-to-top_active_yes');
         }
     });
+    // 描点链接平滑移动
+    $('a[href*=#],area[href*=#]').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({
+                    scrollTop: targetOffset
+                },1000);
+                return false;
+            }
+        }
+    });
 }); 
