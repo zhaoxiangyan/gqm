@@ -8,3 +8,11 @@
           $(this).toggleClass('active');
           $(this).parent().next().slideToggle();
     });
+    // 知识库
+    $(".knowledge_list li p a").click(function(){
+          $(this).parent().parent().toggleClass('active');
+          $(this).parent().parent().next().slideToggle();
+          $(this).parent().parent().parent().siblings().children('.li_title_div').removeClass('active');
+          $(this).parent().parent().parent().siblings().children('.li_content_div').slideUp();
+    });
+ 

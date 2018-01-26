@@ -289,3 +289,73 @@ p.calendar_attention_text {
     color: #4e4e4e;
     letter-spacing: 2px;
 }
+/* 知识库 */
+.content_box img{
+    width:100%;
+}
+.content_box .content_p{
+    font-size:18px;
+    margin-top:30px;
+    line-height:30px;
+}
+.knowledge_list{
+    margin-top:40px;
+}
+.knowledge_list>li{
+    border:1px solid #e3e3e3;
+    box-shadow:0 1px 1px rgba(0,0,0,.05);
+    background:transparent;
+    border-bottom:none;
+}
+.knowledge_list>li:last-child{
+    border-bottom:1px solid #e3e3e3;
+}
+.knowledge_list li p.li_title{
+    color:#333;
+    background:url('../img/plus.png') no-repeat 28px center;
+    padding:18px 30px;
+}
+.knowledge_list li .li_title_div{
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.knowledge_list li .li_title_div.active{
+    background:#f1f1f1;
+}
+.knowledge_list li .li_title_div.active p.li_title{
+    background:url('../img/minus.png') no-repeat 28px center;
+}
+.knowledge_list .li_title a{
+    color:#282a36;
+    font-size:16px;
+    padding-left:40px;
+    display:block;
+}
+.knowledge_list li div.li_content_div{
+    padding:5px 30px 30px 36px;
+    background:#f1f1f1;
+    display:none;
+}
+.knowledge_list li div.li_content{
+    border-left:2px solid #999999;
+    padding-left:20px;
+}
+.knowledge_list .li_content h3{
+    color:#db4713;
+    font-size:17px;
+    margin-bottom:5px;
+}
+.knowledge_list .li_content p{
+    margin-bottom:20px;
+    font-size:15px;
+}
+.knowledge_list .li_content p:last-child{
+    margin-bottom:0;
+}
+.knowledge_list .li_content ul{
+    list-style:disc;
+    padding-left:20px;
+    font-size:15px;
+}

@@ -1,0 +1,84 @@
+/* 自主交易 */
+.independent_transaction_title{
+    font-size:36px;
+    color:#000;
+    margin:50px 0;
+    text-align:center;
+}
+.independent_transaction_list{
+    color:#db4713;
+    font-size:14px;
+}
+.independent_transaction_list li{
+    background:url('../img/li_disc.png') 4px 6px no-repeat;
+    text-indent:18px;
+    margin-bottom:27px;
+}
+.independent_transaction_list li p{
+    text-indent:0;
+    margin-top:8px;
+}
+.features_box{
+    margin-bottom:25px;
+}
+.features_box.margintop100{
+    margin-top:100px;
+}
+.features_box div{
+    float:left;
+    width:50%;
+}
+.features_box h4{
+    font-size:36px;
+    margin-bottom:30px;
+}
+.features_box ul{
+    padding-left:20px;
+    list-style:disc;
+}
+.features_box ul li{
+    letter-spacing:1px;
+    padding:2px 0;
+}
+.features_box ul li span{
+    color:#db4713;
+}
+.step_list{
+    padding:0 10px;
+}
+.step_list li {
+    float:left;
+    position: relative;
+    margin:0 15px;
+    padding:30px 0 30px 110px;
+    width: 260px;
+    height:108px;
+    vertical-align: top;
+    border-radius: 6px;
+    background: -webkit-linear-gradient(#fafafa,#f5f5f5);
+    background: linear-gradient(#fafafa,#f5f5f5);
+    box-shadow: 0 2px 3px rgba(0,0,0,.24);
+}
+.step_list li.width320{
+    width:320px;
+    padding-left:130px;
+}
+.step_list li img{
+    position:absolute;
+}
+.step_list li img.step_register{
+    top:9px;
+    left:8px;
+}
+.step_list li img.step_download{
+    top:20px;
+    left:29px;
+}
+.step_list li img.step_deposit{
+    top:18px;
+    left:20px;   
+}
+.step_list li span{
+    color:#db4713;
+    line-height:24px;
+}
