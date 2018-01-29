@@ -290,7 +290,7 @@ p.calendar_attention_text {
     letter-spacing: 2px;
 }
 /* 知识库 */
-.content_box img{
+.content_box img.knowledge_big_img{
     width:100%;
 }
 .content_box .content_p{

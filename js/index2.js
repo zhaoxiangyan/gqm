@@ -10,7 +10,7 @@ $(function(){
         $(this).addClass("promoblock__control_state_active").siblings().removeClass("promoblock__control_state_active");
         $(".promoblock__items li").eq(index).css('opacity', 0.5).animate({
             'opacity': 1
-        }, 500);
+        }, 1000);
         $(".promoblock__items li").eq(index).siblings().css('opacity', 0);
     }, function() {
         autoplay();
@@ -27,9 +27,9 @@ $(function(){
             $(".promoblock__controls button").eq(index).addClass("promoblock__control_state_active").siblings().removeClass("promoblock__control_state_active");
             $(".promoblock__items li").eq(index).css('opacity', 0.5).animate({
                 'opacity': 1
-            }, 500);
+            }, 1000);
             $(".promoblock__items li").eq(index).siblings().css('opacity', 0);
-        }, 2000);
+        }, 3000);
     };
 
 
