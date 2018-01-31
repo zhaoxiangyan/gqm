@@ -420,6 +420,9 @@ p.comment_month{
     color: #fff;
 }
 /* 投资条件 */
+.mam_tab_long_title{
+    display:none;
+}
 p.investment_terms_attention {
     font-size: 18px;
     color: #4e4e4e;
@@ -577,4 +580,80 @@ p.investment_terms_attention {
     text-indent: 0px;
     line-height:23px;
     padding-left:18px;
+}
+/* 关于资产组合账户的更多详情 */
+.about_mam_title {
+    font-size: 36px;
+    color: #000;
+    margin: 50px 0;
+    text-align: center;
+}
+.about_mam_text_list {
+    padding-left: 20px;
+    list-style-type:none;
+    counter-reset:sectioncounter;
+}
+.about_mam_text_list li {
+    margin: 10px 0;
+}
+.about_mam_text_list li::before{
+    margin-left:-22px;
+    content:counter(sectioncounter) "、";   
+    counter-increment:sectioncounter;  
+}
+/* 封闭式产品 */
+.closed_product_title{
+    font-size:36px;
+    color:#000;
+    margin:50px 0;
+    text-align:center;
+}
+.closed_product_img_list{
+    text-align:center;
+}
+.closed_product_img_list li{
+    width:33.33%;
+    float:left;
+    text-align:center;
+}
+.closed_product_img_list li p{
+    line-height:22px;
+    height:44px;
+    text-align:center;
+    margin-top:14px;
+}
+.closed_product_img_list li img{
+    width:72px;
+    height:72px;
+}
+.closed_product_img_list a{
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    border-radius: 3px;
+    background: url(../img/deposit_button_bg.png) repeat-x;
+    background-size: 1px 40px;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    line-height: 40px;
+    padding: 0 9px;
+    letter-spacing: 2px;
+    margin: 18px 0 50px;
+    text-align:left;
+}
+.closed_product_img_list a span{
+    display: inline-block;
+    position: absolute;
+    color: #000;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+    top: 8px;
+    right: 9px;
 }

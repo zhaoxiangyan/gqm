@@ -1,0 +1,53 @@
+/* 市场代表 */
+.content__div li:last-child{
+    margin-bottom:0;
+}
+.partnership_more{
+    margin-top:60px;
+    font-size:16px;
+}
+.partnership_more a{
+    color:#db4713;
+}
+/* 营销合作 */
+.cooperation_div ul.license__list li {
+    margin-bottom: 10px;
+    font-size:15px;
+}
+.what_cooperation .left p{
+    line-height:19px;
+    margin-bottom:14px;
+}
+.cooperation_div ul.provide_list {
+    padding-left: 20px;
+    float:left;
+    width:50%;
+}
+.cooperation_div ul.provide_list li {
+    margin: 0;
+    list-style: disc;
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-size:15px;
+}
+/* 资金经理 */
+.money_manager_title{
+    font-size:36px;
+    color:#000;
+    margin:50px 0 30px;
+    text-align:center;
+}
+p.money_manager_p{
+    font-size:14px;
+    line-height:19px;
+}
+.money_manager_list{
+    list-style:disc;
+    padding-left:20px;
+}
+.money_manager_list li{
+    margin-bottom:4px;
+}
+.money_manager_list li a{
+    color:#db4713;
+}

@@ -1,0 +1,81 @@
+/* 常见问题 */
+.problem_list {
+    width: 700px;
+}
+.problem_list li {
+    border-bottom: 1px solid #d1d1d1;
+}
+.problem_list li.small_title{
+    line-height:48px;
+    font-size:20px;
+    color:#000;
+}
+.problem_list li.list_space{
+    height:49px;
+}
+.problem_list li p.problem_title {
+    display: inline-block;
+    cursor: pointer;
+    line-height: 48px;
+}
+.problem_list li p.problem_title:hover {
+    color: #db4713;
+}
+.problem_list li p.problem_title.active {
+    color: #db4713;
+}
+.problem_list li p.problem_answer {
+    display: none;
+    padding-left: 10px;
+}
+/* 联系我们 */
+.contact_box{
+    background:#f5f5f5;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.45);
+    border-radius:6px;
+    border-bottom:1px solid #b4b4b4;
+}
+.contact_box>div{
+    float:left;
+    width:50%;
+    padding:18px 0 18px 25px;
+}
+.contact_box div._left{
+    position:relative;
+}
+.contact_box div._left::after{
+    position:absolute;
+    content:'';
+    width:1px;
+    height:90%;
+    background:url('../img/footer_sep_bg.svg') no-repeat;
+    background-size:1px 100%;
+    top:5%;
+    right:0;
+}
+.contact_box div._right{
+    height:225px;
+    background:url('../img/telephone_big_icon.png') no-repeat 267px 18px;
+}
+.contact_box div p.small_title{
+    font-size:18px;
+    margin-bottom:17px;
+}
+.contact_box div ul{}
+.contact_box div ul li{
+    margin-bottom:8px;
+}
+.contact_box div ul li:last-child{
+    margin-bottom:0;
+}
+.contact_box div ul li span{
+    display:inline-block;
+    width:70px;
+    height:19px;
+    text-align:right;
+    text-align:justify;
+    justify-content:space-between;
+}
+/* .contact_box div ul li p{
+    display:inline-block;
+} */
