@@ -424,6 +424,36 @@ ul.ea_transaction_list{}
     float:left;
     width:50%;
 }
+._button {
+    display: inline-block;
+    /* width: 156px; */
+    height: 40px;
+    border-radius: 3px;
+    background: url(../img/deposit_button_bg.png) repeat-x;
+    background-size: 1px 40px;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    line-height: 40px;
+    padding: 0 40px 0 12px;
+    letter-spacing: 2px;
+    margin-top: 35px;
+}
+._button span {
+    display: inline-block;
+    position: absolute;
+    color: #000;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+    top: 8px;
+    right: 9px;
+}
 /* 保证金 */
 p.attention{
     font-size:15px;

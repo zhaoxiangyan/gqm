@@ -81,7 +81,7 @@ p.attention_text{
 }
 
 /* 出金页面 */
-.withdrawal_button{
+/* .withdrawal_button{
     display:inline-block;
     width:156px;
     height:40px;
@@ -111,7 +111,7 @@ p.attention_text{
     font-weight:bold;
     top:8px;
     right:9px;
-}
+} */
 /* 账户间转账页面 */
 .transfer_table{
     border:1px solid #bfbfbf;
@@ -135,6 +135,36 @@ p.attention_text{
 .transfer_table tr .one{
     width:230px;
     border:none;
+}
+._button {
+    display: inline-block;
+    /* width: 156px; */
+    height: 40px;
+    border-radius: 3px;
+    background: url(../img/deposit_button_bg.png) repeat-x;
+    background-size: 1px 40px;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    line-height: 40px;
+    padding: 0 40px 0 12px;
+    letter-spacing: 2px;
+    margin-top: 35px;
+}
+._button span {
+    display: inline-block;
+    position: absolute;
+    color: #000;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+    top: 8px;
+    right: 9px;
 }
 /* 常见问题（出入金） */
 .deposit_problem_list{
@@ -305,4 +335,70 @@ p.calendar_attention_text {
     list-style:disc;
     padding-left:20px;
     font-size:15px;
+}
+/* 市场新闻 */
+.news_list{}
+.news_list li{
+    float:left;
+    width:300px;
+    margin:0 25px 60px 0; 
+}
+.news_list li:nth-child(3n+0){
+    margin-right:0px;
+}
+.news_list li a img{
+    width:300px;
+    height:150px;
+}
+.news_list li h4{
+    font-size:18px;
+    font-weight:bold;
+    margin:15px 0;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.news_list li p{}
+.news_list li p a{
+    height:69px;
+    display:block;
+    font-size:15px;
+    line-height:23px;
+    color:#000;
+    position:relative;
+    overflow:hidden;
+}
+.news_list li p a::after{
+    content:'...';
+    width:150px;
+    height:23px;
+    display:inline-block;
+    position:absolute;
+    background:#fff;
+    bottom:0;
+    right:0;
+    z-index:10;
+}
+.news_list li p a:hover{
+    text-decoration:none;
+    color:#db4713;
+}
+.news_list li div{
+    margin-top:10px;
+    background:rgb(236,236,236);
+    padding:0 10px;
+}
+.news_list li div p{
+    line-height:23px;
+    font-size:13px;
+    position:relative;
+    color:#7d7c7c;
+}
+.news_list li div p span{
+    display:inline-block;
+    position:absolute;
+    padding-left:19px;
+    top:0;
+    right:0;
+    background:url('../img/read_icon.jpg') -1px 4px no-repeat;
 }
