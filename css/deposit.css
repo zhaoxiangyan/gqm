@@ -402,3 +402,15 @@ p.calendar_attention_text {
     right:0;
     background:url('../img/read_icon.jpg') -1px 4px no-repeat;
 }
+/* 市场新闻详情页 */
+.news_detail_content{
+    padding-top:30px;
+}
+.news_detail_content img{
+    max-width:600px;
+}
+.news_detail_content p{
+    font-size:15px;
+    line-height:28px;
+    margin-bottom:40px;
+}

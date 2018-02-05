@@ -1266,18 +1266,28 @@ p {
 .main__news-list li {
     position: relative;
     overflow: hidden;
-    max-height: 41px;
+    /* max-height: 41px; */
     white-space: nowrap;
+    float:left;
+    width:33.33%;
+}
+.main__news-list li>img{
+    width:280px;
+    height:200px;
+}
+.main__news-list li p a{
+    font-size:15px;
+    line-height:20px;
 }
 .main__news-date {
     margin-right: 10px;
-    font-size: 12px;
+    font-size: 14px;
 }
 .main__news-category {
     overflow: hidden;
     color: #999;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 14px;
 }
 .main__news-category-item {
     position: relative;
@@ -2359,7 +2369,8 @@ p {
 }
 /* GQFX优惠活动 */
 .grid__col_w_270{
-    width:260px;
+    /* width:260px; */
+    float:none;
 }
 .grid__col_w_680{
     width:680px;
