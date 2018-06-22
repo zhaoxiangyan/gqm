@@ -1,15 +1,6 @@
 
 document.writeln("<header id='header' class='header'>");
-document.writeln("	<div class='header_nav-opacity'>");
-document.writeln("		<div class='grid__container clearfix'>");
-document.writeln("			<ul class='header__nav-r'>");
-document.writeln("				<li class='header__nav-item header__langs'>");
-document.writeln("					<a  class='header__nav-link header__langs-link' href='#'>简体中文</a>");
-document.writeln("				</li>");
-document.writeln("			</ul>");
-document.writeln("		</div>");
-document.writeln("	</div>");
-document.writeln("<div class='header_content'>");
+document.writeln("  <div class='header_content'>");
 document.writeln("		<a href='../index.html'><img class='header__logo-ball' src='../img/gqfx_logo_mini.png' alt=''></a>");
 document.writeln("		<ul class='header__action-list'>");
 document.writeln("			<li	class='header__action-item'>");

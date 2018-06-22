@@ -9,6 +9,11 @@
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
+    position:fixed;
+    left:0px;
+    top:80px;
+    right:0px;
+    z-index:99;
 }
 .menu{
     margin-bottom: 0px;
@@ -282,7 +287,9 @@
 }
 
 /* 子页面内容页共同样式 */
-.page__main{}
+.page__main{
+    padding-top:144px;
+}
 .banner{
 
 }

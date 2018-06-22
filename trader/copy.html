@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<title>复制高手交易</title>
+	<meta name="keywords" content="复制高手交易">
+	<meta name="viewport" content="width=1000">
+	<meta name="format-detection" content="telephone=no">
+	<link href="../img/gqfx_favicon.ico" rel="shortcut icon" type="image/x-icon" />	
+	<link rel="stylesheet" href="../css/clear.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/nav.css">
+	<link rel="stylesheet" href="../css/trade.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/sidebar.css">
+	<link rel="stylesheet" href="../css/fontawesome/css/font-awesome.min.css">
+</head>
+<body class="page" oncopy="alert('对不起，本网页禁止复制！');return false;">
+<!-- 头部 -->
+<script type="text/javascript" src="../js/head.js"></script>
+<!-- 内容 -->
+<div id="top" class="page__main">
+		<div id="copy" class="content_box">
+			<div class="copy_title  auto950">
+				<div class="title_row clearfix">
+					<div class="fl">
+						<div class="photo_box fl">
+							<img src="../img/copy_photo.jpg"><span>B</span>
+						</div>
+						<div class="info_box fl">
+							<div><h3>政泽之艺</h3><span>中国</span></div>
+							<h4>#<span>机会准</span><span>持单短</span></h4>
+						</div>
+					</div>
+					<div class="fr">
+                        <button>复制</button>
+					</div>
+				</div>
+				<ul class="clearfix">
+					<li class="fl">
+						<div><span>19</span></div>
+						<h4>历史复制者</h4>
+					</li>
+					<li class="fl">
+						<div><span class="text_blue">89.8</span>%</div>
+						<h4>总收益率</h4>
+					</li>
+					<li class="fl">
+						<div><span class="text_green">-21.00</span>%</div>
+						<h4>最大跌幅</h4>
+					</li>
+				</ul>
+			</div>
+			<div class="copy_tabs">
+				<ul class="clearfix">
+					<li class="fl" @click="tab(1)" :class="tabNum == '1'?'active':''"><i class="fa fa-bar-chart"></i>数据统计</li>
+					<li class="fl" @click="tab(2)" :class="tabNum == '2'?'active':''"><i class="fa fa-line-chart"></i>当前交易</li>
+					<li class="fl" @click="tab(3)" :class="tabNum == '3'?'active':''"><i class="fa fa-list"></i>历史交易</li>
+				</ul>
+			</div>
+			<div class="copy_tabs_content">
+               <div v-show="tabNum == '1'" class="chart_box auto950">
+				    <div class="box_title">
+						<span>2018年表现</span>
+						<select>
+							<option>2018</option>
+						</select>
+						<span>数据将于每天北京时间00:00更新</span>
+					</div>
+					<div class="box_content"><canvas id="myChart" ></canvas></div>
+					<div class="box_tips">
+						<i><i class="fa fa-info"></i></i><span>过往表现并不能完全代表未来交易的成功率,您需要理智的做出判断</span>
+					</div>
+			   </div>
+			   <div v-show="tabNum == '1'" class="detail_box auto950">
+				   <ul class="clearfix">
+					   <li><span class="number text_blue">73.74%</span><span class="text">准确率</span></li>
+					   <li><span class="number">0.10手</span><span class="text">最大开仓</span></li>
+					   <li><span class="number">179笔</span><span class="text">总平仓交易</span></li>
+					   <li><span class="number">132笔</span><span class="text">盈利订单</span></li>
+					   <li><span class="number">47笔</span><span class="text">亏损订单</span></li>
+					   <li><span class="number">23时42分</span><span class="text">平均持仓时间</span></li>
+					   <li><span class="number">58笔</span><span class="text">成功做多交易</span></li>
+					   <li><span class="number">74笔</span><span class="text">成功做空交易</span></li>
+					   <li><span class="number">1.63%</span><span class="text">上一日交易日状况<i class="fa fa-info"></i></span><span class="hover">指该高手最后一次有交易行为的数据统计。</span></li>
+					   <li><span class="number">13.48%</span><span class="text">近七日交易状况<i class="fa fa-info"></i></span><span class="hover">指从当前日期开始最近七个自然日交易状况。</span></li>
+					   <li><span class="number">59笔</span><span class="text">月平均交易笔数</span></li>
+				   </ul>
+			   </div>
+			   <div v-show="tabNum == '1'" class="type_box auto950">
+				   <div class="box_select">
+					   <span>主要交易品种</span>
+					   <select>
+						   <option>2018年06月</option>
+						   <option>2018年05月</option>
+						   <option>2018年04月</option>
+						   <option>2018年03月</option>
+					   </select>
+				   </div>
+				   <div class="box_bar clearfix">
+					   <span class="fl"><em>XTIUSD<i></i></em></span>
+					   <span class="fl"><em>GBPJPY<i></i></em></span>
+				   </div>
+				   <div class="box_details">
+					   <h4>平均持仓时间：</h4>
+					   <ul>
+						    <li class="clearfix">
+							   <div class="fl details_left">
+								   <img src="../img/gbpjpy.png">
+								   <span>英镑/日元 (GBPJPY)</span>
+							   </div>
+							   <div class="fl details_right">
+									<span  class="fl"><em>多单，1天<i></i></em></span>
+									<span  class="fl"><em>空单，21小时<i></i></em></span>
+							   </div>
+						    </li>
+						    <li class="clearfix">
+								<div class="fl details_left">
+									<img src="../img/xtiusd.png">
+									<span>西德州原油 (XTIUSD)</span>
+								</div>
+								<div class="fl details_right">
+									 <span  class="fl"><em>空单，1小时<i></i></em></span>
+									 <span  class="fl"><em>多单，16小时<i></i></em></span>
+								</div>
+							</li>
+					   </ul>
+				   </div>
+			   </div>
+			   <div v-if="tabNum == '2'" class="current_box auto950">
+				   <table>
+					   <thead>
+						   <tr>
+							   <th width="300">操作</th>
+							   <th>开仓价</th>
+							   <th>现价</th>
+							   <th>持仓时间</th>
+							   <th>点数</th>
+							   <th>收益</th>
+						   </tr>
+					   </thead>
+					   <tbody>
+						    <tr>
+							   <td><img src="../img/gbpjpy.png"><span>买涨</span><span>英镑日元</span></td>
+							   <td>144.556</td>
+							   <td>144.25</td>
+							   <td>1小时</td>
+							   <td>-134</td>
+							   <td><i></i>-7.55</td>
+						    </tr>
+						    <tr>
+								<td><img src="../img/gbpjpy.png"><span>买涨</span><span>英镑日元</span></td>
+								<td>144.556</td>
+								<td>144.25</td>
+								<td>1小时</td>
+								<td>-134</td>
+								<td><i></i>-7.55</td>
+							</tr>
+							<tr>
+								<td><img src="../img/gbpjpy.png"><span>买涨</span><span>英镑日元</span></td>
+								<td>144.556</td>
+								<td>144.25</td>
+								<td>1小时</td>
+								<td>-134</td>
+								<td><i></i>-7.55</td>
+							</tr>
+					   </tbody>
+				   </table>
+			   </div>
+			   <div v-else-if="tabNum == '3'" class="history_box auto950">
+					<table>
+						<thead>
+							<tr>
+								<th width="300">操作</th>
+								<th>开仓价</th>
+								<th>现价</th>
+								<th>持仓时间</th>
+								<th>点数</th>
+								<th>收益</th>
+							</tr>
+						</thead>
+						<tbody>
+								<tr>
+								<td><img src="../img/gbpjpy.png"><span>买涨</span><span>英镑日元</span></td>
+								<td>144.556</td>
+								<td>144.25</td>
+								<td>1小时</td>
+								<td>-134</td>
+								<td><i></i>-7.55</td>
+								</tr>
+								<tr>
+									<td><img src="../img/gbpjpy.png"><span>买涨</span><span>英镑日元</span></td>
+									<td>144.556</td>
+									<td>144.25</td>
+									<td>1小时</td>
+									<td>-134</td>
+									<td><i></i>-7.55</td>
+								</tr>
+								<tr>
+									<td><img src="../img/gbpjpy.png"><span>买涨</span><span>英镑日元</span></td>
+									<td>144.556</td>
+									<td>144.25</td>
+									<td>1小时</td>
+									<td>-134</td>
+									<td><i></i>-7.55</td>
+								</tr>
+						</tbody>
+					</table>
+			   </div>
+			</div>
+		</div>
+</div>
+<!-- 尾部 -->
+<script type="text/javascript" src="../js/foot.js"></script>
+<!-- 飘窗 -->
+<script type="text/javascript" src="../js/sidebar.js"></script>
+<!-- 回到顶部 -->
+<div class="page__action-buttons"><a class="page__back-to-top js-back-to-top" href="#top">返回顶部</a></div>
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/nav.js"></script>
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+<script>
+    var app = new Vue({
+        el:'#copy',
+        data: {
+            tabNum:1,
+			one:(45*Math.random()).toFixed(2),
+			myChart:''
+        },
+        filters: {
+            
+        },
+        computed: {
+           
+        },
+		mounted() {
+			// 条形图
+			var ctx = document.getElementById("myChart").getContext('2d');
+			this.myChart = new Chart(ctx, {
+			type: 'bar',
+			data: {
+				labels: ["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],
+				datasets: [{
+					label: '月收益率',
+					data: [,,-5.01,5.86, 34.57, this.one,,,,,,,],
+					backgroundColor: [
+						'',
+						'rgba(97,203,40)',
+						'rgba(97,203,40)',
+						'rgba(242,50,68)',
+						'rgba(242,50,68)',
+						'rgba(242,50,68)',
+						'rgba(242,50,68)',
+						'',
+						'',
+						'',
+						'',
+						'',
+					],
+					borderWidth: 0
+				}]
+			},
+			options: {
+				tooltips:{
+					callbacks:{
+						label: function(tooltipItem, data) {
+							var label = data.datasets[tooltipItem.datasetIndex].label || '';
+							if (label) {
+								label += ': ';
+							}
+							label += Math.round(tooltipItem.yLabel * 100) / 100;
+							label += '%';
+							return label;
+						}
+					}
+				},
+				legend:{
+					display:false
+				},
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero:true
+						}
+					}]
+				},
+				maintainAspectRatio:true
+			}
+			});
+			// $.ajax({
+			// 	type:"get",
+			// 	url:"https://cn.tigerwit.com/api/master/trading_profile?token=&user_code=50239056",
+			// 	success:function(res){
+			// 		console.log(888);
+			// 	},
+			// 	error:function(err){
+			// 		console.log(err);
+			// 		console.log(66666)
+			// 	}
+			// });
+		},
+		updated(){
+			if(this.tabNum == '1'){
+				this.one = (45*Math.random()).toFixed(2);
+				this.myChart.data.datasets[0].data[5] = this.one;
+				this.myChart.update();
+			}
+		},
+		methods:{
+			tab(value){
+				this.tabNum = value;
+			}
+		}
+    });
+</script>
+</body>
+</html>
