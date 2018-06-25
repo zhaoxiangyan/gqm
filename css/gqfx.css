@@ -49,8 +49,35 @@
     font-size:18px;
     line-height:34px;
 }
-
-
+/* 公司介绍 */
+.gqfx_content>img{
+    max-width:1000px;
+    width:100%;
+    margin-bottom:90px;
+}
+.gqfx_content h4{
+    font-size:23px;
+    color:#e84700;
+    font-weight:normal;
+    margin-bottom:20px;
+}
+.gqfx_content p{
+    font-size:18px;
+    color:#575757;
+    line-height:28px;
+}
+.gqfx_content ul li{
+    margin-bottom:60px;
+}
+.gqfx_content ul li img{
+    float:left;
+    height:155px;   
+}
+.gqfx_content ul li div{
+    margin-left:225px;
+    padding-top:30px;
+}
+/* gqfx */
 ul.content__div{} 
 .content__div li{
     margin-bottom:130px;
@@ -64,7 +91,7 @@ ul.content__div{}
     padding-right:35px;
 }
 .content__div li div.right{
-    padding-left:35px;
+    /* padding-left:35px; */
 }
 .content__div li div.companyvalue_text{
     padding-left:55px;
@@ -75,8 +102,9 @@ ul.content__div{}
     margin-bottom:35px;
 }
 .content__div li div p{
-    font-size:15px;
-    line-height:25px;
+    font-size:18px;
+    line-height:30px;
+    margin-bottom:25px;
 }
 .content__div li img{
     max-width:440px;
@@ -88,9 +116,12 @@ ul.content__div{}
 .content__div ul.license__list li{
     margin:0;
     list-style:disc;
-    line-height:20px;
-    margin-bottom:4px;
+    line-height:30px;
+    /* margin-bottom:4px; */
+    font-size:18px;
 }
+/* 监管牌照 */
+
 /* 资金安全保障 */
 .security_title{
     font-size:36px;
@@ -111,3 +142,46 @@ ul.content__div{}
     text-indent:0;
     margin-top:8px;
 }
+/* 监管 */
+.supervise_content{}
+.supervise_content img{
+    width:100%;
+    margin-bottom:50px;
+}
+.supervise_content p{
+    font-size:18px;
+    line-height:30px;
+    margin-bottom:35px;
+}
+/* 优势 */
+.advantage_content{}
+.advantage_content h4{
+    font-size:23px;
+    color:#e84700;
+    margin-bottom:22px;
+    margin-top:60px;
+}
+.advantage_content h4:first-child{
+    margin-top:0px;
+}
+.advantage_content p{
+    font-size:18px;
+    line-height:28px;
+    margin-bottom:22px;
+}
+.advantage_content>img{
+    width:100%;
+}
+.advantage_content ul{
+    margin-top:55px;
+}
+.advantage_content ul li{}
+.advantage_content ul li img{
+    height:155px;
+}
+.advantage_content ul li div{
+    margin-left: 190px;
+    padding-top: 30px;
+}
+.advantage_content ul li div h4{}
+.advantage_content ul li div p{}

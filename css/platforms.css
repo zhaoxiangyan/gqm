@@ -119,3 +119,37 @@
 }
 /* Android应用 */
 /* 社交交易APP */
+/* ipad应用 */
+.ipad_content div{}
+.ipad_content div p{
+    margin-left:140px;
+    padding-top:35px;
+}
+.ipad_content div img{}
+.ipad_content h4{
+    font-size:23px;
+    color:#e84700;
+    margin-top:65px;
+    margin-bottom:20px;
+}
+.ipad_content p{
+    font-size:18px;
+    line-height:25px;
+}
+/* 平板电脑应用 */
+.tablet_content div{}
+.tablet_content div p{
+    margin-left:160px;
+    padding-top:35px;
+}
+.tablet_content div img{}
+.tablet_content h4{
+    font-size:23px;
+    color:#e84700;
+    margin-top:65px;
+    margin-bottom:20px;
+}
+.tablet_content p{
+    font-size:18px;
+    line-height:25px;
+}
